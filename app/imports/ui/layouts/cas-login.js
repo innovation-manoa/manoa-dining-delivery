@@ -36,3 +36,12 @@ Template.Cas_Login.onRendered(function enableDropDown() {
     action: 'select',
   });
 });
+
+Template.Cas_Login.helpers({
+  /**
+   * @returns {String} Returns the user who's logged in
+   */
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : 'No logged in user';
+  },
+});
