@@ -1,6 +1,5 @@
 body {
-  padding-top: 2%;  /* Move body of page below navbar. */
-  background-color: #F7F7F7;
+  background-color: white;
 }
 
 .ui.centered.borderless.top.menu {
@@ -8,6 +7,10 @@ body {
   border: none;
   background-color: #F7F7F7;
   margin-top: -2%;
+}
+
+.ui.borderless.container.header {
+  margin-top: 1%;
 }
 
 .ui.centered.borderless.grid.container {
@@ -35,7 +38,23 @@ body {
   bottom: 60%;
 }
 
-.ui.two.column.grid {
-  margin-left: 1%;
-  margin-top: 3%;
+.fitted.item.login {
+  float: right;
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+#hmpgText {
+  font-family: 'Coda';
+  font-size: 36px;
+  margin-top: 13%;
+  margin-left: 5%;
+}
+
+.ui.container.hmpg {
+  background-color: #F7F7F7;
+}
+
+.eight.wide.column {
+  margin-left: 5%;
 }
