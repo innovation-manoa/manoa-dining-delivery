@@ -1,0 +1,40 @@
+<template name="Add_Request_Page">
+  {{#If_Logged_In}}
+  <!--
+    <div style="padding-top: 20px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+    -->
+  {{/If_Logged_In}}
+  <form class="ui form">
+    <h4 class="ui dividing header">Shipping Information</h4>
+    <div class="field">
+      <label>Name</label>
+      <div class="two fields">
+        <div class="field">
+          <input type="text" name="shipping[first-name]" placeholder="First Name">
+        </div>
+        <div class="field">
+          <input type="text" name="shipping[last-name]" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Email Address</label>
+      <div class="fields">
+        <div class="eight wide field">
+          <input type="text" name="shipping[address]" placeholder="Email Address">
+        </div>
+        <label>Dormitory/Location</label>
+        <div class="four wide field">
+          <input type="text" name="shipping[address-2]" placeholder="Location">
+        </div>
+      </div>
+    </div>
+  </form>
+</template>
