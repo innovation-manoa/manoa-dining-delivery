@@ -1,3 +1,41 @@
 body {
-  padding-top: 61px;  /* Move body of page below navbar. */
+  padding-top: 2%;  /* Move body of page below navbar. */
+  background-color: #F7F7F7;
+}
+
+.ui.centered.borderless.top.menu {
+  box-shadow: none;
+  border: none;
+  background-color: #F7F7F7;
+  margin-top: -2%;
+}
+
+.ui.centered.borderless.grid.container {
+  margin-top: 1%;
+}
+
+.ui.centered.large.header {
+  font-family: 'Cinzel';
+}
+
+.ui.centered.grid.container.home.page {
+  margin-left: 20%;
+}
+
+.text.img {
+  position: absolute;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Cinzel';
+  bottom: 65%;
+}
+
+.ui.black.button {
+  position: absolute;
+  bottom: 60%;
+}
+
+.ui.two.column.grid {
+  margin-left: 1%;
+  margin-top: 3%;
 }

@@ -1,12 +1,59 @@
 <template name="Header">
-    <div class="ui top fixed borderless inverted menu">
-  <div class="ui container">
-      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>meteor-application-template</h1></a>
-      {{#if currentUser}}
-        <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">Add Stuff </a>
-        <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">List Stuff</a>
-      {{/if}}
-      <a href="#" class="right aligned item">{{> loginButtons align="right"}} </a>
+
+  <a class="item" href="{{pathFor 'Home_Page'}}">
+    <img class="ui centered uh logo image" style="width: 175px; height: 175px;" src="/images/manoaseal_transparent.png">
+  </a>
+
+  <div class="ui centered large header">Manoa Dining Delivery</div>
+
+  <div class="ui centered borderless top menu">
+    <div class="ui centered borderless grid container">
+      <div class="four wide container">
+        <a class="{{ isActiveRoute 'View_All_Page'}} item " href="{{pathFor 'View_All_Page'}}">View All Requests</a>
+      </div>
+      <div class="four wide container">
+        <a class="{{ isActiveRoute 'Add_Request_Page'}} item " href="{{pathFor 'Add_Request_Page'}}">Start A Request</a>
+      </div>
+      <div class="four wide container">
+        <a class="{{ isActiveRoute 'Browse_Menu_Page'}} item " href="{{pathFor 'Browse_Menu_Page'}}">Browse Menu</a>
+      </div>
+      <div class="four wide container">
+        <a class="{{ isActiveRoute 'About_Us_Page'}} item " href="{{pathFor 'About_Us_Page'}}">About Us</a>
+      </div>
+      <div class="four wide container">
+        <a href="#" class="top menu login item">{{> loginButtons align="right"}} </a>
+      </div>
     </div>
+    <!--
+    <div class="ui four item menu">
+      <a class="item">View All Requests</a>
+      <a class="item">Fulfill A Request</a>
+      <a class="item">Browse Menu</a>
+      <a class="item">About Us</a>
+      <a href="#" class="login item">{{> loginButtons align="right"}} </a>
+    </div>
+
+    <div class="ui centered borderless grid container">
+    <div class="four wide container">
+      <a class="item">View All Requests</a>
+      <a class="item">Fulfill A Request</a>
+      <a class="item">Browse Menu</a>
+      <a class="item">About Us</a>
+    </div>
+
+    <div class="eight wide container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Manoa Dining Delivery</h1></a>
+    </div>
+
+    <div class="four wide container">
+    {{#if currentUser}}
+    <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">Add Stuff </a>
+    <a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">List Stuff</a>
+    {{/if}}
+    <a href="#" class="right aligned login item">{{> loginButtons align="right"}} </a>
+    </div>
+
+  </div>
+  -->
   </div>
 </template>
