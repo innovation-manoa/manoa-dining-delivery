@@ -36,3 +36,8 @@ The idea of Manoa Dining delivery is to allow students who live at the UH dorms 
 - They are then shown their order
 	- example: steak, burger, pizza, fries, lemonade, special requests: little bit of fries
 - They deliver and are paid in cash 
+
+## Note to devs 
+Couple of things:
+1. Make sure you guys are using eslint (it will help with productivity and readability)
+2. When you guys implement something please do *NOT* push straight to master. Create a branch off master with feature name (ex. home-page-mockup) and when you have completed it, create a Pull Request and assign me (Terry) to review it. If its fine I'll go ahead and merge it, if not, I'll leave some comments to review and make adjustments to.
