@@ -1,0 +1,62 @@
+<template name="Edit_Profile_Page">
+  {{ #if Template.subscriptionsReady }}
+  <div class="ui container" style="padding-top: 20px; width:50%">
+    <form class="ui form edit-profile-form {{ errorClass }}">
+      <h4 class="ui dividing header">Edit Profile</h4>
+      <div class="two fields">
+        <div class="required field">
+          <label>First Name</label>
+          <input readonly="" type="text" value="John">
+        </div>
+        <div class="required field">
+          <label>Last Name</label>
+          <input readonly="" type="text" value="Doe">
+        </div>
+      </div>
+      <div class="two fields">
+        <div class="required field">
+          <label>Dorm</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="dorm">
+            <i class="dropdown icon"></i>
+            <div class="default text">Dorm</div>
+            <div class="menu">
+              <div class="item" data-value="0">Frear Hall</div>
+              <div class="item" data-value="1">Gateway House</div>
+              <div class="item" data-value="2">Hale Anuenue</div>
+              <div class="item" data-value="3">Hale Laulima</div>
+              <div class="item" data-value="4">Hale Kahawai</div>
+              <div class="item" data-value="5">Johnson Hall</div>
+              <div class="item" data-value="6">Hale Aloha Ilima</div>
+              <div class="item" data-value="7">Hale Aloha Lehua</div>
+              <div class="item" data-value="8">Hale Aloha Lokelani</div>
+              <div class="item" data-value="9">Hale Aloha Mokihana</div>
+            </div>
+          </div>
+        </div>
+        <div class="required field">
+          <label>Room Number</label>
+          <input type="text" placeholder="201A">
+        </div>
+      </div>
+      <div class="two fields">
+        <div class="required field">
+          <label>Phone</label>
+          <input type="text" placeholder="808-555-1234">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input readonly="" type="text" placeholder="email@hawaii.edu">
+        </div>
+      </div>
+      <div class="inline field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>I agree to the terms and conditions.</label>
+        </div>
+      </div>
+      <button class="ui primary button">Submit</button>
+    </form>
+  </div>
+  {{ /if }}
+</template>
