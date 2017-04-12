@@ -4,6 +4,7 @@
       <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
     </div>
     <div class="six wide column login">
+      <div class="text" href="{{pathFor 'View_All_Page'}}">View All Requests</div>
       {{#if currentUser}}
       <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
       {{/if}}
