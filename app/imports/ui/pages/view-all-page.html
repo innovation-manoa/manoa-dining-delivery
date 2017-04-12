@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<template name="View_All_Page">
+  {{#If_Logged_In}}
+  <!--
+    <div style="padding-top: 20px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+    -->
+  {{/If_Logged_In}}
+  <table style="margin-top: 20px" class="ui celled table">
+    <thead>
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+      <th>Number</th>
+      <th>Dorm</th>
+    </tr>
+    </thead>
+  </table>
+</template>
