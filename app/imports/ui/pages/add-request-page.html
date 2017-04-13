@@ -1,40 +1,60 @@
 <template name="Add_Request_Page">
-  {{#If_Logged_In}}
-  <!--
-    <div style="padding-top: 20px" class="ui text container">
-      {{> quickForm
-      collection=stuffCollection
-      template="semanticUI"
-      id="AddStuffForm"
-      type="insert"
-      resetOnSuccess=true}}
+    <div class="ui container" style="width: 50%;">
+      <form class="ui form" style="padding: 25px 0px 25px 0px;">
+        <h4 class="ui dividing header">Request a Delivery</h4>
+        <div class="two fields">
+          <div class="required field">
+            <label>First Name</label>
+            <input readonly="" type="text" value="John">
+          </div>
+          <div class="required field">
+            <label>Last Name</label>
+            <input readonly="" type="text" value="Doe">
+          </div>
+        </div>
+        <div class="three fields">
+          <div class="required field">
+            <label>Dorm</label>
+            <div class="ui selection dropdown">
+              <input type="hidden" name="dorm">
+              <i class="dropdown icon"></i>
+              <div class="default text">Dorm</div>
+              <div class="menu">
+                <div class="item" data-value="0">Frear Hall</div>
+                <div class="item" data-value="1">Gateway House</div>
+                <div class="item" data-value="2">Hale Anuenue</div>
+                <div class="item" data-value="3">Hale Laulima</div>
+                <div class="item" data-value="4">Hale Kahawai</div>
+                <div class="item" data-value="5">Johnson Hall</div>
+                <div class="item" data-value="6">Hale Aloha Ilima</div>
+                <div class="item" data-value="7">Hale Aloha Lehua</div>
+                <div class="item" data-value="8">Hale Aloha Lokelani</div>
+                <div class="item" data-value="9">Hale Aloha Mokihana</div>
+              </div>
+            </div>
+          </div>
+          <div class="required field">
+            <label>Room Number</label>
+            <input type="text" placeholder="201A">
+          </div>
+          <div class="required field">
+            <label>Phone Number</label>
+            <input type="text" placeholder="808-956-8111">
+          </div>
+        </div>
+        <div class="required field">
+          <label>Requested Foods</label>
+          <select multiple="" class="ui dropdown">
+            <option value="0">Spaghetti & Meatballs with Sauce</option>
+            <option value="1">Garlic Bread</option>
+            <option value="2">Huli Huli Chicken</option>
+            <option value="3">Medium Grain Rice</option>
+            <option value="4">Steamed Fresh Zucchini</option>
+            <option value="5">Classic Cheeseburger on a Toasted Bun</option>
+            <option value="6">Grilled Cheese</option>
+          </select>
+        </div>
+        <button class="ui primary button">Submit Request</button>
+      </form>
     </div>
-    -->
-  {{/If_Logged_In}}
-  <form class="ui form">
-    <h4 class="ui dividing header">Shipping Information</h4>
-    <div class="field">
-      <label>Name</label>
-      <div class="two fields">
-        <div class="field">
-          <input type="text" name="shipping[first-name]" placeholder="First Name">
-        </div>
-        <div class="field">
-          <input type="text" name="shipping[last-name]" placeholder="Last Name">
-        </div>
-      </div>
-    </div>
-    <div class="field">
-      <label>Email Address</label>
-      <div class="fields">
-        <div class="eight wide field">
-          <input type="text" name="shipping[address]" placeholder="Email Address">
-        </div>
-        <label>Dormitory/Location</label>
-        <div class="four wide field">
-          <input type="text" name="shipping[address-2]" placeholder="Location">
-        </div>
-      </div>
-    </div>
-  </form>
 </template>

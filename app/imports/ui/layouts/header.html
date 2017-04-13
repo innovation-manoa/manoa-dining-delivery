@@ -1,14 +1,29 @@
 <template name="Header">
-  <div class="ui grid header">
-    <div class="ten wide column">
-      <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
-    </div>
-    <div class="six wide column login">
-      <div class="text" href="{{pathFor 'View_All_Page'}}">View All Requests</div>
-      {{#if currentUser}}
-      <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
-      {{/if}}
-      <div class="right aligned item">{{> Cas_Login}}</div>
-    </div>
-  </div>
+   <div class="ui grid header">
+      <div class="ten wide column">
+         <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
+      </div>
+      <div class="six wide column login">
+         <!-- The pages below are shown only when logged in -->
+        <ul>
+
+         {{#if currentUser}}
+            <ul> <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a></ul>
+            <ul> <a class="item" href="{{ pathFor 'Add_Request_Page' }}">Request a Delivery</a></ul>
+            <ul> <a class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a></ul>
+            <ul>
+               <div class="ui dropdown item">
+                  <a class="text" href="#">Menu</a>
+                  <div class="menu">
+                     <a class="item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha Cafe</a>
+                     <a class="item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway Cafe</a>
+                  </div>
+               </div>
+            </ul>
+         {{/if}}
+         <ul> <div class="right aligned item">{{> Cas_Login}}</div> </ul>
+         </ul>
+
+      </div>
+   </div>
 </template>
