@@ -51,10 +51,17 @@ FlowRouter.route('/add_request', {
   },
 });
 
-FlowRouter.route('/menu', {
-  name: 'Browse_Menu_Page',
+FlowRouter.route('/hale_aloha_menu', {
+  name: 'Browse_Menu_Aloha',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Browse_Menu_Page' });
+    BlazeLayout.render('App_Body', { main: 'Browse_Menu_Aloha' });
+  },
+});
+
+FlowRouter.route('/gateway_menu', {
+  name: 'Browse_Menu_Gateway',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Browse_Menu_Gateway' });
   },
 });
 

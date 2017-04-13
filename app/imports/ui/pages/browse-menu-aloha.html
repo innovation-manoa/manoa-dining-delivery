@@ -1,10 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<template name="Browse_Menu_Aloha">
+  <!--
+  {{#If_Logged_In}}
+
+    <div style="padding-top: 20px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+  {{/If_Logged_In}}
+  -->
+  <div style="margin-top: 1%" class="ui centered container browseAloha">
+    <h1>Hale Aloha Menu</h1>
+  </div>
+
+  <div class="ui centered container weekdays">
+    <div class="ui seven item menu">
+      <a class="active item">Sunday</a>
+      <a class="item">Monday</a>
+      <a class="item">Tuesday</a>
+      <a class="item">Wednesday</a>
+      <a class="item">Thursday</a>
+      <a class="item">Friday</a>
+      <a class="item">Saturday</a>
+    </div>
+  </div>
+  <div class="ui centered container">
+    <table style="margin-top: 20px" class="ui centered basic table">
+      <thead>
+      <tr>
+        <!--will not be final table names, will change it all later, for now leave-->
+        <th>Food Type</th>
+        <th>Menu Item</th>
+        <th>Calories</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <!--obv will use the script, here for mockup-->
+        <th>Chef's Choice</th>
+        <th>Chicken Marsala</th>
+        <th>200</th>
+      </tr>
+      <tr>
+        <th>Chef's Chice</th>
+        <th>Housemade Rosemary Focaccia</th>
+        <th>120</th>
+      </tr>
+      <tr>
+        <th>Grill</th>
+        <th>Classic Cheeseburger on a Toasted Bun</th>
+        <th>340</th>
+      </tr>
+      <tr>
+        <th>Vegetarian/Vegan</th>
+        <th>Tequila Lime Roasted Vegetable Stew</th>
+        <th>40</th>
+      </tr>
+      </tbody>
+    </table>
+    <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/800x550">
+  </div>
+
+  <!--
+  insert pictures on this page
+  hale aloha only has dinner on weekdays, brunch and dinner on weekends, do logic for that later
+  -->
+
+  <script>
+    menu = {};
+
+    // ready event
+    menu.ready = function() {
+
+      // selector cache
+      var
+          $menuItem = $('.menu a.item, .menu .link.item'),
+          // alias
+          handler = {
+            activate: function() {
+              $(this)
+                  .addClass('active')
+                  .closest('.ui.seven.item.menu')
+                  .find('.item')
+                  .not($(this))
+                  .removeClass('active');
+            }
+          }
+      ;
+
+      $menuItem
+          .on('click', handler.activate)
+      ;
+
+    };
+
+
+    // attach ready event
+    $(document).ready(menu.ready);
+  </script>
+
+</template>
