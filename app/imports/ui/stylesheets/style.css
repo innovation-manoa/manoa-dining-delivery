@@ -57,12 +57,13 @@ body {
   margin-top: -6%;
   margin-left: 41.5%;
   color: #329900;
+  font-size: 35px;
 }
 
 .hmpgText.bot {
   color: #848484;
   margin-left: 41.5%;
-  margin-top: -4%;
+  margin-top: -3%;
 }
 
 .large.ui.button {
