@@ -5,6 +5,8 @@
     <p class="view all p1">Please login in order to fulfill requests!</p>
   </div>
 
+  <!--Could add a field if in a dorm, then choose floor just cuz-->
+
   <div class="ui centered container">
     <table style="margin-top: 20px" class="ui celled table">
       <thead>
@@ -16,6 +18,46 @@
         <th></th>
       </tr>
       </thead>
+      <tbody>
+      <tr>
+        <th>Brendt</th>
+        <th>McFeeley</th>
+        <th>8082184913</th>
+        <th>Frear Hall</th>
+        <th>
+          {{#if currentUser}}
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          {{/if}}
+        </th>
+      </tr>
+      <tr>
+        <th>Terry</th>
+        <th>Palomares</th>
+        <th>8086954205</th>
+        <th>Hale Kahawai</th>
+      </tr>
+      <tr>
+        <th>Raven</th>
+        <th>Robles</th>
+        <th>2439627472</th>
+        <th>Hale Wainani</th>
+        <th>
+          <!--{{#if currentUser}}-->
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          <!--{{/if}}-->
+        </th>
+      </tr>
+      </tbody>
     </table>
   </div>
 </template>

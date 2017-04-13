@@ -1,29 +1,32 @@
 <template name="Header">
-   <div class="ui grid header">
-      <div class="ten wide column">
-         <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
+  <div class="ui grid header">
+    <div class="six wide column">
+      <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
+    </div>
+    <div style="padding-top: 2%;" class="two wide column">
+      <a style="color: black;" class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a>
+    </div>
+    <div style="padding-top: 2%;" class="two wide column">
+      <div class="ui dropdown">
+        Menus
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
+          <a class="item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
+        </div>
       </div>
-      <div class="six wide column login">
-         <!-- The pages below are shown only when logged in -->
-        <ul>
+    </div>
+    <div style="padding-top: 2%" class="two wide column login">
+      <div class="right aligned item">{{> Cas_Login}}</div>
+      {{#if currentUser}}
+      <a style="color: black;" class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
+      {{/if}}
+    </div>
+  </div>
 
-         {{#if currentUser}}
-            <ul> <a class="item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a></ul>
-            <ul> <a class="item" href="{{ pathFor 'Add_Request_Page' }}">Request a Delivery</a></ul>
-            <ul> <a class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a></ul>
-            <ul>
-               <div class="ui dropdown item">
-                  <a class="text" href="#">Menu</a>
-                  <div class="menu">
-                     <a class="item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha Cafe</a>
-                     <a class="item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway Cafe</a>
-                  </div>
-               </div>
-            </ul>
-         {{/if}}
-         <ul> <div class="right aligned item">{{> Cas_Login}}</div> </ul>
-         </ul>
+  <script>
+    $('.ui.dropdown')
+        .dropdown();
+  </script>
 
-      </div>
-   </div>
 </template>

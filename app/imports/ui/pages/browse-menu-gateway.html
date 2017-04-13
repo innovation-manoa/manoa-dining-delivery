@@ -1,22 +1,9 @@
 <template name="Browse_Menu_Gateway">
-  <!--
-  {{#If_Logged_In}}
-
-    <div style="padding-top: 20px" class="ui text container">
-      {{> quickForm
-      collection=stuffCollection
-      template="semanticUI"
-      id="AddStuffForm"
-      type="insert"
-      resetOnSuccess=true}}
-    </div>
-  {{/If_Logged_In}}
-  -->
   <div style="margin-top: 1%" class="ui centered container browseAloha">
     <h1>Hale Aloha Menu</h1>
   </div>
 
-  <div class="ui centered container radForm">
+  <div class="ui centered container weekdays">
     <div class="ui seven item menu">
       <a class="active item">Sunday</a>
       <a class="item">Monday</a>
@@ -28,33 +15,59 @@
     </div>
   </div>
   <div class="ui centered container">
-    <table style="margin-top: 20px" class="ui celled table">
+    <table style="margin-top: 20px" class="ui centered basic table">
       <thead>
       <tr>
-        <th>First Name</th>
-        <th>Last Last</th>
-        <th>Phone Number</th>
-        <th>Current Location / Dormitory</th>
-        <th></th>
+        <!--will not be final table names, will change it all later, for now leave-->
+        <th>Food Type</th>
+        <th>Menu Item</th>
+        <th>Calories</th>
       </tr>
       </thead>
+      <tbody>
+      <tr>
+        <!--obv will use the script, here for mockup-->
+        <th>Breakfast</th>
+        <th>Peaches & Cream Oatmeal</th>
+        <th>140</th>
+      </tr>
+      <tr>
+        <th>Breakfast</th>
+        <th>Chocolate Chip Pancakes</th>
+        <th>190</th>
+      </tr>
+      <tr>
+        <th>Grill</th>
+        <th>Quesadilla Bar</th>
+        <th>420</th>
+      </tr>
+      <tr>
+        <th>Vegetarian/Vegan</th>
+        <th>Macaroni & Cheese Casserette</th>
+        <th>500</th>
+      </tr>
+      </tbody>
     </table>
+    <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/800x550">
   </div>
 
-  <!--insert pictures on this page-->
+  <!--
+  insert pictures on this page
+  hale aloha only has dinner on weekdays, brunch and dinner on weekends, do logic for that later
+  -->
 
   <script>
     menu = {};
 
     // ready event
-    menu.ready = function() {
+    menu.ready = function () {
 
       // selector cache
       var
           $menuItem = $('.menu a.item, .menu .link.item'),
           // alias
           handler = {
-            activate: function() {
+            activate: function () {
               $(this)
                   .addClass('active')
                   .closest('.ui.seven.item.menu')
@@ -71,9 +84,7 @@
 
     };
 
-
     // attach ready event
     $(document).ready(menu.ready);
   </script>
-
 </template>
