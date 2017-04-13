@@ -1,0 +1,956 @@
+{
+    "Friday": {
+        "Lunch": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "160",
+                        "name": "Oatmeal with Toppings"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Scrambled Eggs"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Hash Brown Patties"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Grilled Spam"
+                    }
+                ],
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "210",
+                        "name": "Pollock Sticks"
+                    },
+                    {
+                        "calories": "920",
+                        "name": "Cheese  Quesadilla"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "French Fried Potatoes"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "470",
+                        "name": "Eggs Benedict and Canadian Bacon"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Corndogs"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "80",
+                        "name": "Garden Pasta Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "330",
+                        "name": "House Beef & Horseradish Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "250",
+                        "name": "Corned Beef and Cabbage"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Parsley Boiled Potatoes"
+                    },
+                    {
+                        "calories": "40",
+                        "name": "Sliced Steamed Carrots"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "100",
+                        "name": "Homestyle Chicken and Rice Soup"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Roasted Tomato Tortilla Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "270",
+                        "name": "Penne with Pesto Vegetables"
+                    },
+                    {
+                        "calories": "50",
+                        "name": "Sauteed Spinach with Red Onion & Garlic"
+                    }
+                ]
+            }
+        }
+    },
+    "Monday": {
+        "Breakfast": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "130",
+                        "name": "Blueberries & Cream Oatmeal"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Scrambled Eggs"
+                    },
+                    {
+                        "calories": "220",
+                        "name": "Blueberry Pancakes"
+                    },
+                    {
+                        "calories": "250",
+                        "name": "French Fried Tater Tots"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Corned Beef Hash"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Sausage Gravy & Biscuit"
+                    }
+                ]
+            }
+        },
+        "Dinner": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "440",
+                        "name": "Taco Night  Taco Bar"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "Mexican Fried Rice"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Refried Beans"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "650",
+                        "name": "Buffalo Chicken Wings"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "330",
+                        "name": "Curly Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "260",
+                        "name": "Sushi Bar California Roll with Wasabi"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Sushi Bar Chicken Teriyaki Roll with Wasabi"
+                    },
+                    {
+                        "calories": "270",
+                        "name": "Cheese Flatbread Pizza"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "70",
+                        "name": "Cucumber  Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "290",
+                        "name": "Deviled Egg Salad Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "640",
+                        "name": "Kalua Pig & Cabbage with Rice"
+                    },
+                    {
+                        "calories": "40",
+                        "name": "Sliced Steamed Carrots"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "110",
+                        "name": "Old-Fashioned Chicken Noodle Soup"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Gingered Carrot Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "460",
+                        "name": "Cheese Quesadillas"
+                    },
+                    {
+                        "calories": "35",
+                        "name": "Roasted Curry Tofu"
+                    }
+                ]
+            }
+        },
+        "Lunch": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "280",
+                        "name": "Chicken & Rice Casserole"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Whole Wheat Flatbread"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "630",
+                        "name": "Hot Italian Meatball Sandwiches"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Grilled Cheese with Tomatoes on Wheat"
+                    },
+                    {
+                        "calories": "270",
+                        "name": "French Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "200",
+                        "name": "Margherita  Pizza"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "Lasagna Flat Bread Pizza"
+                    },
+                    {
+                        "calories": "450",
+                        "name": "Mozzarella Sticks & Marinara"
+                    },
+                    {
+                        "calories": "80",
+                        "name": "Herb Seasoned Breadsticks"
+                    },
+                    {
+                        "calories": "35",
+                        "name": "Spaghetti Sauce with Tomato Bits"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "290",
+                        "name": "Deviled Egg Salad Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "100",
+                        "name": "Jasmine Rice"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Black Bean Stew"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "110",
+                        "name": "Old-Fashioned Chicken Noodle Soup"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Gingered Carrot Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "70",
+                        "name": "Cucumber  Salad"
+                    }
+                ]
+            }
+        }
+    },
+    "Thursday": {
+        "Breakfast": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "200",
+                        "name": "Apple Banana Oatmeal"
+                    },
+                    {
+                        "calories": "80",
+                        "name": "Cream of Wheat"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Scrambled Eggs"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Texas French Toast"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Home Fried  Potatoes"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Crispy Bacon"
+                    },
+                    {
+                        "calories": "540",
+                        "name": "Home-Style Breakfast Bowl"
+                    }
+                ]
+            }
+        },
+        "Dinner": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "230",
+                        "name": "Hamburger Steak"
+                    },
+                    {
+                        "calories": "150",
+                        "name": "Cheddar Mashed Potatoes"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "650",
+                        "name": "Chili Cheese Fries"
+                    },
+                    {
+                        "calories": "360",
+                        "name": "Grilled Cheese Sandwich"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "French Fried Tater Tot"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "580",
+                        "name": "Create Your Own Pasta w/ Meatballs"
+                    },
+                    {
+                        "calories": "630",
+                        "name": "Create Your Own Pasta w/ Shrimp Alfredo"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Cheesy Garlic Bread"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "70",
+                        "name": "Pineapple Cole Slaw"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "210",
+                        "name": "Chimmichuri Chicken Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "200",
+                        "name": "Simple Chicken Taco Salad Plate"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "170",
+                        "name": "Bacon Corn Chowder"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Three Mushroom Barley"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "60",
+                        "name": "Cold Vegan Spring Roll"
+                    },
+                    {
+                        "calories": "480",
+                        "name": "Greek Spinach Strudel"
+                    }
+                ]
+            }
+        },
+        "Lunch": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "450",
+                        "name": "Chicken  Parmesan"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "670",
+                        "name": "Monte Cristo Sandwich"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "French  Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "340",
+                        "name": "Cheeseburger  Pizza"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "Pepperoni Pizza Bagel"
+                    },
+                    {
+                        "calories": "620",
+                        "name": "Mushroom & Sausage Calzone"
+                    },
+                    {
+                        "calories": "80",
+                        "name": "Herb Seasoned Breadsticks"
+                    },
+                    {
+                        "calories": "35",
+                        "name": "Spaghetti Sauce with Tomato Bits"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "70",
+                        "name": "Pineapple Cole Slaw"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "210",
+                        "name": "Chimmichuri Chicken Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "240",
+                        "name": "Herb Baked Chicken"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Yellow Rice"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Mixed Vegetables"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "170",
+                        "name": "Bacon Corn Chowder"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Three Mushroom Barley"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "590",
+                        "name": "Pasta with Olives and Tomatoes"
+                    },
+                    {
+                        "calories": "280",
+                        "name": "Teriyaki Tofu, Quinoa & Pineapple"
+                    }
+                ]
+            }
+        }
+    },
+    "Tuesday": {
+        "Breakfast": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "80",
+                        "name": "Cream of Wheat"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Oatmeal with Toppings"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Scrambled Eggs"
+                    },
+                    {
+                        "calories": "200",
+                        "name": "Cinnamon Toast Crunch Bagel French Toast"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Mexican Breakfast Potatoes"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Sausage Links"
+                    },
+                    {
+                        "calories": "270",
+                        "name": "Breakfast Fried Rice"
+                    }
+                ]
+            }
+        },
+        "Dinner": {
+            "type": {
+                "Entr\u00e9e": [
+                    {
+                        "calories": "310",
+                        "name": "Crispy Orange Chicken Stir-Fry"
+                    },
+                    {
+                        "calories": "270",
+                        "name": "Breakfast Fried Rice"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "440",
+                        "name": "Breakfast for Dinner Local Special Loco Moco"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "French Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "270",
+                        "name": "Oodles of Noodles Saimin Noodles Bar"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "90",
+                        "name": "Balsamic Broccoli Pasta Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "300",
+                        "name": "Corned Beef Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "260",
+                        "name": "BBQ Beef Brisket"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Oven Roasted Garlic Potatoes"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Steamed  Corn"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "70",
+                        "name": "Hearty Beef Vegetable Soup"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Curry Lentil Soup"
+                    }
+                ],
+                "Specials": [
+                    {
+                        "calories": "800",
+                        "name": "Waffle Bar"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "140",
+                        "name": "Spinach & Jack Cheese Enchiladas"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Butternut Squash & Lentils"
+                    }
+                ]
+            }
+        },
+        "Lunch": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "180",
+                        "name": "Roasted Turkey"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Simple Baked Sweet Potato"
+                    },
+                    {
+                        "calories": "40",
+                        "name": "Steamed Broccoli"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "930",
+                        "name": "Buffalo Meltdown Sandwich"
+                    },
+                    {
+                        "calories": "330",
+                        "name": "Cheese Quesadilla"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "French Fried Potatoes"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "430",
+                        "name": "Create Your Own Pasta Ravioli Bar"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Cheesy Garlic Bread"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "90",
+                        "name": "Balsamic Broccoli Pasta Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "300",
+                        "name": "Corned Beef Biggie Sandwich"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "70",
+                        "name": "Hearty Beef Vegetable Soup"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Curry Lentil Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "340",
+                        "name": "Mochiko Tofu with Korean Dipping Sauce"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Roasted Eggplant"
+                    }
+                ]
+            }
+        }
+    },
+    "Wednesday": {
+        "Breakfast": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "140",
+                        "name": "Peaches & Cream Oatmeal"
+                    },
+                    {
+                        "calories": "240",
+                        "name": "Breakfast for Lunch Omelet Bar"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Scrambled Eggs"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Chocolate Chip Pancakes"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "French Fried Tater Tot"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "Portuguese Sausage"
+                    },
+                    {
+                        "calories": "230",
+                        "name": "Banana Strawberry Yogurt Smoothie"
+                    }
+                ]
+            }
+        },
+        "Dinner": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "460",
+                        "name": "Southern Style Fried Chicken"
+                    },
+                    {
+                        "calories": "250",
+                        "name": "Red Beans & Rice"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "420",
+                        "name": "Quesadilla Bar"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "French Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "500",
+                        "name": "Made to Order Pizza"
+                    }
+                ],
+                "Salad": [
+                    {
+                        "calories": "130",
+                        "name": "Toasted Lentil Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "200",
+                        "name": "Turkey Hummus Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "170",
+                        "name": "Cuban Mojo Roasted Pork"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Cajun Spiced Roasted Potatoes"
+                    },
+                    {
+                        "calories": "25",
+                        "name": "Steamed Green Beans"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "110",
+                        "name": "Roast Turkey & Rice Soup"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Tuscan Bean Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "500",
+                        "name": "Macaroni & Cheese Casserette"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Korean Stir-Fried Vegetables with Tofu"
+                    }
+                ]
+            }
+        },
+        "Lunch": {
+            "type": {
+                "Deli": [
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "160",
+                        "name": "Beef Teriyaki"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Chow Mein Noodles"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "380",
+                        "name": "Chili Dog"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "330",
+                        "name": "Curly Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "300",
+                        "name": "Pepperoni Pizza"
+                    },
+                    {
+                        "calories": "480",
+                        "name": "Supreme Pizza"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Caesar Salad"
+                    }
+                ],
+                "Sandwich": [
+                    {
+                        "calories": "200",
+                        "name": "Turkey Hummus Biggie Sandwich"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "80",
+                        "name": "Mandarin Orange Spinach Salad"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Tuscan White Bean Salad"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "110",
+                        "name": "Roast Turkey & Rice Soup"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Tuscan Bean Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "250",
+                        "name": "Spaghetti Squash & Pintos with Sofrito"
+                    }
+                ]
+            }
+        }
+    }
+}

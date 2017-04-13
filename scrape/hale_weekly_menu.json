@@ -1,0 +1,738 @@
+{
+    "Friday": {
+        "Dinner": {
+            "type": {
+                "Chefs Choice": [
+                    {
+                        "calories": "250",
+                        "name": "Corned Beef and Cabbage"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Red Potatoes"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "70",
+                        "name": "Fried Pollock Sticks"
+                    },
+                    {
+                        "calories": "270",
+                        "name": "Steak Cut French Fries"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Veggie Burger"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "140",
+                        "name": "Spinach & Ricotta Flat Bread Pizza"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "120",
+                        "name": "Cornmeal Breaded Seasoned Fish Fillet"
+                    },
+                    {
+                        "calories": "20",
+                        "name": "Cornmeal"
+                    },
+                    {
+                        "calories": "5",
+                        "name": "French-Style Green Beans, Frozen"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Jasmine Rice (Steamed)"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "160",
+                        "name": "Vegetarian Black Bean Soup"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Hearty Beef Vegetable Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "340",
+                        "name": "Mochiko Tofu with Korean Dipping Sauce"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Jasmine Rice (Steamed)"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Broccoli Spears"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Tossed Wheat Berry & Corn Salad"
+                    }
+                ]
+            }
+        }
+    },
+    "Monday": {
+        "Dinner": {
+            "type": {
+                "Chefs Choice": [
+                    {
+                        "calories": "200",
+                        "name": "Chicken Marsala"
+                    },
+                    {
+                        "calories": "200",
+                        "name": "Ziti Pasta"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Broccoli Cuts"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Housemade Rosemary Focaccia"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "300",
+                        "name": "Pork Adobo"
+                    },
+                    {
+                        "calories": "10",
+                        "name": "White Miso Paste"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Brown Sugar"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Whole Green Beans"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Medium Grain Rice"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "440",
+                        "name": "Rajun Cajun Burger"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "French  Fries"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Veggie Burger"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    },
+                    {
+                        "calories": "290",
+                        "name": "Turkey Sausage Arugula Pizzetta"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "80",
+                        "name": "Onion Soup with Parmesan Crouton"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Potato Leek Soup (Mindful)"
+                    }
+                ],
+                "Tastechanger": [
+                    {
+                        "calories": "170",
+                        "name": "Fried Battered Cod"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "6\" Pressed Flour Tortillas"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Creamy Cilantro Cole Slaw Side Salad"
+                    },
+                    {
+                        "calories": "0",
+                        "name": "Diced Fresh Tomatoes"
+                    },
+                    {
+                        "calories": "80",
+                        "name": "Chipotle Mayonnaise"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "40",
+                        "name": "Tequila Lime Roasted Vegetable Stew"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Cilantro Rice"
+                    },
+                    {
+                        "calories": "290",
+                        "name": "Baja Baked Enchilada"
+                    }
+                ]
+            }
+        }
+    },
+    "Saturday": {
+        "Dinner": {
+            "type": {
+                "Entr\u00e9e": [
+                    {
+                        "calories": "450",
+                        "name": "Shoyu Chicken with Green Onions"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Medium Grain Rice"
+                    },
+                    {
+                        "calories": "20",
+                        "name": "Green Peas, Frozen"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "490",
+                        "name": "Chicken Parmesan Sandwich"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "French  Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "170",
+                        "name": "Beef Ravioli, Canned"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "80",
+                        "name": "Mahi Mahi Fillet"
+                    },
+                    {
+                        "calories": "0",
+                        "name": "Lemon Juice"
+                    },
+                    {
+                        "calories": "0",
+                        "name": "Capers"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Medium Grain Rice"
+                    },
+                    {
+                        "calories": "50",
+                        "name": "Mixed Vegetables, Frozen (4 Way)"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "60",
+                        "name": "Tomato Bisque with Fresh Basil"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Beef, Barley & Onion Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "440",
+                        "name": "White Vegetable Lasagna"
+                    },
+                    {
+                        "calories": "760",
+                        "name": "Linguine with Olive Oil & Garlic"
+                    }
+                ]
+            }
+        },
+        "Lunch": {
+            "type": {
+                "Breakfast": [
+                    {
+                        "calories": "240",
+                        "name": "Omelet Bar"
+                    },
+                    {
+                        "calories": "70",
+                        "name": "Hard Cooked Cage Free Egg"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Cream of Wheat"
+                    },
+                    {
+                        "calories": "180",
+                        "name": "Scrambled Eggs with Margarine"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Corned Beef Hash"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Home Fried  Potato"
+                    },
+                    {
+                        "calories": "550",
+                        "name": "Waffles Diana and Blueberries"
+                    }
+                ],
+                "Deli": [
+                    {
+                        "calories": "260",
+                        "name": "Roasted Veggie Biggie Sandwich"
+                    },
+                    {
+                        "calories": "280",
+                        "name": "Made to Order Deli Bar"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "430",
+                        "name": "Ham, Egg & Cheese Croissant"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "French  Fries"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "150",
+                        "name": "Ranch Chicken & Broccoli Flatbread Pizza"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    }
+                ],
+                "Simple Servings": [
+                    {
+                        "calories": "110",
+                        "name": "Grilled Cumin Chicken"
+                    },
+                    {
+                        "calories": "150",
+                        "name": "Basmati Rice with Green Peas"
+                    },
+                    {
+                        "calories": "40",
+                        "name": "Steamed Fresh Baby Carrots"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "60",
+                        "name": "Tomato Bisque with Fresh Basil"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Beef, Barley & Onion Soup"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "320",
+                        "name": "Macaroni and Cheese"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Spicy Vegan Vegetable & Peanut Curry"
+                    }
+                ]
+            }
+        }
+    },
+    "Thursday": {
+        "Dinner": {
+            "type": {
+                "Chefs Choice": [
+                    {
+                        "calories": "200",
+                        "name": "Penne Pasta"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Alfredo Cream Sauce"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "100",
+                        "name": "Grilled Korean Chicken"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Pork Potstickers Gyoza"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Sticky Rice"
+                    },
+                    {
+                        "calories": "60",
+                        "name": "Steamed  Corn"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "25",
+                        "name": "Teriyaki Sauce"
+                    },
+                    {
+                        "calories": "160",
+                        "name": "Grilled Steak"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "260",
+                        "name": "Bacon Spinach Alfredo Pizza"
+                    },
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    }
+                ],
+                "Potato": [
+                    {
+                        "calories": "260",
+                        "name": "Baked Potato Bar"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "60",
+                        "name": "Garlic and Tomato Soup"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Lighthouse Clam Chowder"
+                    }
+                ],
+                "Tastechanger": [
+                    {
+                        "calories": "100",
+                        "name": "Beef Teriyaki"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Grilled/Roasted Chicken Thigh"
+                    },
+                    {
+                        "calories": "70",
+                        "name": "Fried Pollock Sticks"
+                    },
+                    {
+                        "calories": "360",
+                        "name": "Saimin Cup"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Spam"
+                    },
+                    {
+                        "calories": "100",
+                        "name": "Kimchi"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "530",
+                        "name": "Vegetarian Taco Salad"
+                    }
+                ]
+            }
+        }
+    },
+    "Tuesday": {
+        "Dinner": {
+            "type": {
+                "Chefs Choice": [
+                    {
+                        "calories": "580",
+                        "name": "Chicken Pot Pie with Pastry Topping"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "120",
+                        "name": "Italian Beef Top Round"
+                    },
+                    {
+                        "calories": "45",
+                        "name": "Romesco Demi-Glace Sauce"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Baked Potato Small"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Broccoli Spears"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "650",
+                        "name": "Chili Cheese Fries"
+                    },
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "210",
+                        "name": "Pepperoni  Pizza"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Buffalo Chicken Snowshoe Pizza"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "90",
+                        "name": "Hearty Beef Vegetable Soup"
+                    },
+                    {
+                        "calories": "150",
+                        "name": "Mushroom and Roasted Garlic Soup"
+                    }
+                ],
+                "Tastechanger": [
+                    {
+                        "calories": "440",
+                        "name": "Loco Moco"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "90",
+                        "name": "Tunisian Vegetable Stew w/ Almonds"
+                    },
+                    {
+                        "calories": "140",
+                        "name": "Brown Rice, steamed"
+                    },
+                    {
+                        "calories": "130",
+                        "name": "Chickpea Stew (Chana Masala)"
+                    },
+                    {
+                        "calories": "110",
+                        "name": "Pulao Rice"
+                    }
+                ]
+            }
+        }
+    },
+    "Wednesday": {
+        "Dinner": {
+            "type": {
+                "Chefs Choice": [
+                    {
+                        "calories": "380",
+                        "name": "Spaghetti & Meatballs and Sauce"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Olive Oil Crostini"
+                    },
+                    {
+                        "calories": "5",
+                        "name": "Tomato & Basil Bruschetta"
+                    }
+                ],
+                "Entr\u00e9e": [
+                    {
+                        "calories": "610",
+                        "name": "Southern Fried Chicken"
+                    },
+                    {
+                        "calories": "150",
+                        "name": "Smashed Red Skin Potatoes"
+                    },
+                    {
+                        "calories": "90",
+                        "name": "Corn on the Cob"
+                    }
+                ],
+                "Grill": [
+                    {
+                        "calories": "340",
+                        "name": "Classic Cheeseburger on a Toasted Bun"
+                    },
+                    {
+                        "calories": "400",
+                        "name": "Grilled Cheese"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "French  Fries"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Veggie Burger"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Chicken Nuggets"
+                    }
+                ],
+                "Pizza": [
+                    {
+                        "calories": "190",
+                        "name": "Cheese Pizza - Slice"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "The Hawaiian"
+                    },
+                    {
+                        "calories": "260",
+                        "name": "Pigs In a Blanket"
+                    }
+                ],
+                "Soup": [
+                    {
+                        "calories": "280",
+                        "name": "Creamy Broccoli Cheddar Soup"
+                    },
+                    {
+                        "calories": "120",
+                        "name": "Roast Turkey &  Rice Soup"
+                    }
+                ],
+                "Tastechanger": [
+                    {
+                        "calories": "90",
+                        "name": "6\" Pressed Flour Tortillas"
+                    },
+                    {
+                        "calories": "30",
+                        "name": "Creamy Cilantro Cole Slaw Side Salad"
+                    },
+                    {
+                        "calories": "0",
+                        "name": "Diced Fresh Tomatoes"
+                    },
+                    {
+                        "calories": "170",
+                        "name": "Beef Taco"
+                    }
+                ],
+                "Vegetarian/Vegan": [
+                    {
+                        "calories": "250",
+                        "name": "Artichoke, Spinach Tomato Casserette"
+                    },
+                    {
+                        "calories": "320",
+                        "name": "Curried Sesame Tofu with Rice & Veggies"
+                    }
+                ]
+            }
+        }
+    }
+}
