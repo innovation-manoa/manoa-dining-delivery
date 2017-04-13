@@ -7,7 +7,7 @@
 
   <!--Could add a field if in a dorm, then choose floor just cuz-->
 
-  <div class="ui centered container">
+  <div style="padding-bottom: 2%" class="ui centered container">
     <table style="margin-top: 20px" class="ui celled table">
       <thead>
       <tr>
@@ -40,6 +40,16 @@
         <th>Palomares</th>
         <th>8086954205</th>
         <th>Hale Kahawai</th>
+        <th>
+          {{#if currentUser}}
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          {{/if}}
+        </th>
       </tr>
       <tr>
         <th>Raven</th>
