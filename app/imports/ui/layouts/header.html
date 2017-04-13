@@ -1,14 +1,31 @@
 <template name="Header">
   <div class="ui grid header">
-    <div class="ten wide column">
+    <div class="six wide column">
       <a class="fitted left item" href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
     </div>
-    <div class="six wide column login">
-      <div class="text" href="{{pathFor 'View_All_Page'}}">View All Requests</div>
-      {{#if currentUser}}
-      <a class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
-      {{/if}}
+    <div style="padding-top: 2%;" class="two wide column">
+      <a style="color: black;" class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a>
+    </div>
+    <div style="padding-top: 2%;" class="two wide column">
+      <div class="ui dropdown">
+        Menus
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
+          <a class="item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 2%" class="two wide column login">
       <div class="right aligned item">{{> Cas_Login}}</div>
+      {{#if currentUser}}
+      <a style="color: black;" class="{{ isActiveRoute 'Edit_Profile_Page'}} item" href="{{ pathFor 'Edit_Profile_Page' }}">Edit Profile</a>
+      {{/if}}
     </div>
   </div>
+
+  <script>
+    $('.ui.dropdown')
+        .dropdown();
+  </script>
 </template>
