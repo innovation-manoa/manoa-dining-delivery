@@ -44,7 +44,6 @@ export const RequestsSchema = new SimpleSchema({
     label: 'requestedFoods',
     type: [String],
     optional: false,
-    max: 3,
   },
   fulfilled: {
     label: 'fulfilled',
