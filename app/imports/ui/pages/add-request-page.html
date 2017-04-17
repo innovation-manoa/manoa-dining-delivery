@@ -1,6 +1,6 @@
 <template name="Add_Request_Page">
   <div class="ui container" style="width: 50%;">
-    <form class="ui request-form form" style="padding: 25px 0px 25px 0px;">
+    <form class="ui request-form form {{ errorClass }}" style="padding: 25px 0px 25px 0px;">
       <h4 class="ui dividing header">Request a Delivery</h4>
       <div class="three fields">
         {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorms") required=true }}

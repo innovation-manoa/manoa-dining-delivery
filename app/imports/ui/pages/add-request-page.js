@@ -46,7 +46,7 @@ Template.Add_Request_Page.helpers({
   },
 });
 
-Template.Add_Request_Page.helpers({
+Template.Add_Request_Page.events({
   'submit .request-form'(event, instance) {
     event.preventDefault();
     /*
@@ -57,7 +57,7 @@ Template.Add_Request_Page.helpers({
     const lastName = 'Doe';
     const dorm = event.target.dorm.value;
     const roomNumber = event.target.room.value;
-    const phoneNumber = event.target.phoneNumber.value;
+    const phoneNumber = event.target.phone.value;
     const requestedFoods = event.target.requestedFoods.value;
     const isFulfilled = false;
 
@@ -66,10 +66,12 @@ Template.Add_Request_Page.helpers({
     instance.context.resetValidation();
     RequestsSchema.clean(newRequestData);
     if (instance.context.isValid()) {
+      console.log('valid');
       Requests.insert(newRequestData);
       instance.messageFlags.set(displayErrorMessages, false);
       FlowRouter.go('View_All_Page');
     } else {
+      console.log('invalid');
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
