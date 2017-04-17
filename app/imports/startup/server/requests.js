@@ -19,5 +19,7 @@ const requestSeeds = [
 ];
 
 if (Requests.find().count() === 0) {
-  _.each(requestSeeds, (request) => Requests.insert(request));
+  _.each(requestSeeds, function insertRequest(request) {
+    Requests.insert(request);
+  });
 }

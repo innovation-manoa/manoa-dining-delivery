@@ -19,11 +19,11 @@ const dormsList = [
   'Hale Aloha Mokihana',
 ];
 
-Template.Add_Request_Page.onRendered(() => {
+Template.Add_Request_Page.onRendered(function onRendered() {
   this.$('.dropdown').dropdown();
 });
 
-Template.Add_Request_Page.onCreated(() => {
+Template.Add_Request_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
   this.messageFlags.set(displayErrorMessages, false);
   this.context = RequestsSchema.namedContext('Add_Request_Page');
