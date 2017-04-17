@@ -12,7 +12,7 @@ const requestSeeds = [
     last: 'Doe',
     dorm: 'Frear Hall',
     room: '201A',
-    telephone: '808-956-8111',
+    phone: '808-956-8111',
     requestedFoods: ['Teri Burger'],
     fulfilled: false,
   },
