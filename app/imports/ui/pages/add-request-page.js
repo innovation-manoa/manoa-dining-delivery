@@ -53,15 +53,16 @@ Template.Add_Request_Page.events({
      const firstName = event.target.first.value;
      const lastName = event.target.last.value;
      */
-    const firstName = 'John';
-    const lastName = 'Doe';
+    const first = 'John';
+    const last = 'Doe';
     const dorm = event.target.dorm.value;
-    const roomNumber = event.target.room.value;
-    const phoneNumber = event.target.phone.value;
-    const requestedFoods = event.target.requestedFoods.value;
-    const isFulfilled = false;
+    const room = event.target.room.value;
+    const phone = event.target.phone.value;
+    const requestedFoods = ['Cheeseburger'];
+    const fulfilled = false;
 
-    const newRequestData = { firstName, lastName, dorm, roomNumber, phoneNumber, requestedFoods, isFulfilled };
+    const newRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
+    console.log(newRequestData);
 
     instance.context.resetValidation();
     RequestsSchema.clean(newRequestData);
