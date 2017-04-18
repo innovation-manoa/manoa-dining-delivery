@@ -49,12 +49,9 @@ Template.Add_Request_Page.helpers({
 Template.Add_Request_Page.events({
   'submit .request-form'(event, instance) {
     event.preventDefault();
-    /*
-     const firstName = event.target.first.value;
-     const lastName = event.target.last.value;
-     */
-    const first = 'John';
-    const last = 'Doe';
+
+    const first = event.target.first.value;
+    const last = event.target.last.value;
     const dorm = event.target.dorm.value;
     const room = event.target.room.value;
     const phone = event.target.phone.value;
