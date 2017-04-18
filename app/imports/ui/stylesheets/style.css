@@ -27,7 +27,7 @@ body {
 
 .fitted.item.login {
   margin-top: 2%;
-  font-size: 20px;
+  font-size: 1.04vw;
 }
 
 .home.page {
@@ -39,17 +39,17 @@ body {
 }
 
 #hmpgText {
-  font-family: 'Coda';
-  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.6vw;
 }
 
 #hmpgTextSmall {
-  font-family: 'Coda';
-  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.04vw;
 }
 
 .hmpgText.top {
-  margin-top: 15%;
+  margin-top: 21.5%;
   margin-left: 41.5%;
 }
 
@@ -57,13 +57,13 @@ body {
   margin-top: -6%;
   margin-left: 41.5%;
   color: #329900;
-  font-size: 35px;
+  font-size: 1.65vw;
 }
 
 .hmpgText.bot {
   color: #848484;
   margin-left: 41.5%;
-  margin-top: -3%;
+  margin-top: -4.2%;
 }
 
 .large.ui.button {
@@ -117,5 +117,11 @@ h1 {
 }
 
 th {
+  font-size: 1.05vw;
+  font-family: 'Open Sans', sans-serif;
+}
 
+td {
+  font-size: 1vw;
+  font-family: 'Open Sans', sans-serif;
 }

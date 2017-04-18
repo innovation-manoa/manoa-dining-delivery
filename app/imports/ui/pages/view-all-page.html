@@ -6,9 +6,8 @@
   </div>
 
   <!--Could add a field if in a dorm, then choose floor just cuz-->
-
   <div class="ui centered container">
-    <table style="margin-top: 20px" class="ui celled table">
+    <table style="margin-top: 2%" class="ui celled table">
       <thead>
       <tr>
         <th>First Name</th>
@@ -20,11 +19,11 @@
       </thead>
       <tbody>
       <tr>
-        <th>Brendt</th>
-        <th>McFeeley</th>
-        <th>8082184913</th>
-        <th>Frear Hall</th>
-        <th>
+        <td>Brendt</td>
+        <td>McFeeley</td>
+        <td>{{#if currentUser}}8082184913{{/if}}</td>
+        <td>Frear Hall</td>
+        <td>
           {{#if currentUser}}
           <div class="ui animated button" tabindex="0">
             <div class="visible content">Fulfill</div>
@@ -33,29 +32,39 @@
             </div>
           </div>
           {{/if}}
-        </th>
+        </td>
       </tr>
       <tr>
-        <th>Terry</th>
-        <th>Palomares</th>
-        <th>8086954205</th>
-        <th>Hale Kahawai</th>
-      </tr>
-      <tr>
-        <th>Raven</th>
-        <th>Robles</th>
-        <th>2439627472</th>
-        <th>Hale Wainani</th>
-        <th>
-          <!--{{#if currentUser}}-->
+        <td>Terry</td>
+        <td>Palomares</td>
+        <td>{{#if currentUser}}8089385183{{/if}}</td>
+        <td>Hale Kahawai</td>
+        <td>
+          {{#if currentUser}}
           <div class="ui animated button" tabindex="0">
             <div class="visible content">Fulfill</div>
             <div class="hidden content">
               <i class="right arrow icon"></i>
             </div>
           </div>
-          <!--{{/if}}-->
-        </th>
+          {{/if}}
+        </td>
+      </tr>
+      <tr>
+        <td>Raven</td>
+        <td>Robles</td>
+        <td>{{#if currentUser}}356823943{{/if}}</td>
+        <td>Hale Wainani</td>
+        <td>
+          {{#if currentUser}}
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          {{/if}}
+        </td>
       </tr>
       </tbody>
     </table>
