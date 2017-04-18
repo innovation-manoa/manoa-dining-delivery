@@ -43,8 +43,7 @@ export const ProfilesSchema = new SimpleSchema({
     label: 'phone',
     type: String,
     optional: false,
-    // Phone number is of format NNN-NNN-NNNN
-    regEx: /^\d{3}-\d{3}-\d{4}$/,
+    regEx: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
   },
 });
 
