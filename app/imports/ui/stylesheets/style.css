@@ -1,5 +1,12 @@
+html {
+  height: 100%;
+  min-height: 100% !important;
+}
+
 body {
-  background-color: white;
+  height: 100%;
+  min-height: 100% !important;
+  overflow: auto;
 }
 
 .ui.centered.borderless.top.menu {
@@ -32,6 +39,7 @@ body {
 
 .home.page {
   height: auto;
+  width: auto;
 }
 
 .column.hmpg {
@@ -96,10 +104,6 @@ body {
   font-size: 23px;
 }
 
-Footer {
-  background-color: black;
-}
-
 .ui.centered.container.foot {
   color: white;
 }
@@ -124,4 +128,20 @@ th {
 td {
   font-size: 1vw;
   font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+}
+
+#main-wrapper {
+  min-height: 100%;
+  height: auto;
+}
+
+#white-space {
+  padding-bottom: 20.5%;
 }
