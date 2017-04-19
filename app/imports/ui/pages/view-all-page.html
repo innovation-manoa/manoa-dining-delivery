@@ -12,51 +12,25 @@
       <thead>
       <tr>
         <th>First Name</th>
-        <th>Last Last</th>
+        <th>Last Name</th>
+        <th>Dorm</th>
+        <th>Room Number</th>
         <th>Phone Number</th>
-        <th>Current Location / Dormitory</th>
-        <th></th>
+        <th>Foods Requested</th>
       </tr>
       </thead>
       <tbody>
+      <!-- Fill table with the list of requests -->
+      {{ #each request in requestsList }}
       <tr>
-        <th>Brendt</th>
-        <th>McFeeley</th>
-        <th>8082184913</th>
-        <th>Frear Hall</th>
-        <th>
-          {{#if currentUser}}
-          <div class="ui animated button" tabindex="0">
-            <div class="visible content">Fulfill</div>
-            <div class="hidden content">
-              <i class="right arrow icon"></i>
-            </div>
-          </div>
-          {{/if}}
-        </th>
+        <td>{{request.first}}</td>
+        <td>{{request.last}}</td>
+        <td>{{request.dorm}}</td>
+        <td>{{request.room}}</td>
+        <td>{{request.phone}}</td>
+        <td>{{request.requestedFoods}}</td>
       </tr>
-      <tr>
-        <th>Terry</th>
-        <th>Palomares</th>
-        <th>8086954205</th>
-        <th>Hale Kahawai</th>
-      </tr>
-      <tr>
-        <th>Raven</th>
-        <th>Robles</th>
-        <th>2439627472</th>
-        <th>Hale Wainani</th>
-        <th>
-          <!--{{#if currentUser}}-->
-          <div class="ui animated button" tabindex="0">
-            <div class="visible content">Fulfill</div>
-            <div class="hidden content">
-              <i class="right arrow icon"></i>
-            </div>
-          </div>
-          <!--{{/if}}-->
-        </th>
-      </tr>
+      {{ /each }}
       </tbody>
     </table>
   </div>

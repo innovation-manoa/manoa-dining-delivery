@@ -1,60 +1,20 @@
 <template name="Add_Request_Page">
   <div class="ui container" style="width: 50%;">
-    <form class="ui form" style="padding: 25px 0px 25px 0px;">
+    <form class="ui request-form form {{ errorClass }}" style="padding: 25px 0px 25px 0px;">
       <h4 class="ui dividing header">Request a Delivery</h4>
       <div class="two fields">
-        <div class="required field">
-          <label>First Name</label>
-          <input readonly="" type="text" value="John">
-        </div>
-        <div class="required field">
-          <label>Last Name</label>
-          <input readonly="" type="text" value="Doe">
-        </div>
+        {{> Text_Form_Control name="first" label="First Name" errorMessage=(fieldError "first") required=true }}
+        {{> Text_Form_Control name="last" label="Last Name" errorMessage=(fieldError "last") required=true }}
       </div>
       <div class="three fields">
-        <div class="required field">
-          <label>Dorm</label>
-          <div class="ui selection dropdown">
-            <input type="hidden" name="dorm">
-            <i class="dropdown icon"></i>
-            <div class="default text">Dorm</div>
-            <div class="menu">
-              <div class="item" data-value="0">Frear Hall</div>
-              <div class="item" data-value="1">Gateway House</div>
-              <div class="item" data-value="2">Hale Anuenue</div>
-              <div class="item" data-value="3">Hale Laulima</div>
-              <div class="item" data-value="4">Hale Kahawai</div>
-              <div class="item" data-value="5">Johnson Hall</div>
-              <div class="item" data-value="6">Hale Aloha Ilima</div>
-              <div class="item" data-value="7">Hale Aloha Lehua</div>
-              <div class="item" data-value="8">Hale Aloha Lokelani</div>
-              <div class="item" data-value="9">Hale Aloha Mokihana</div>
-            </div>
-          </div>
-        </div>
-        <div class="required field">
-          <label>Room Number</label>
-          <input type="text" placeholder="201A">
-        </div>
-        <div class="required field">
-          <label>Phone Number</label>
-          <input type="text" placeholder="808-956-8111">
-        </div>
+        {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorms") required=true }}
+        {{> Text_Form_Control name="room" label="Room Number" errorMessage=(fieldError "room") required=true }}
+        {{> Text_Form_Control name="phone" label="Phone Number" errorMessage=(fieldError "phone") required=true }}
       </div>
-      <div class="required field">
-        <label>Requested Foods</label>
-        <select multiple="" class="ui dropdown">
-          <option value="0">Spaghetti & Meatballs with Sauce</option>
-          <option value="1">Garlic Bread</option>
-          <option value="2">Huli Huli Chicken</option>
-          <option value="3">Medium Grain Rice</option>
-          <option value="4">Steamed Fresh Zucchini</option>
-          <option value="5">Classic Cheeseburger on a Toasted Bun</option>
-          <option value="6">Grilled Cheese</option>
-        </select>
+      <div class="field">
+        {{> Select_Form_Control name="requestedFoods" label="Requested Foods" errorMessage=(fieldError "requestedFoods") multiple=true required=true }}
       </div>
-      <button class="ui primary button">Submit Request</button>
+      <button class="ui primary button" type="submit">Submit Request</button>
     </form>
   </div>
 </template>
