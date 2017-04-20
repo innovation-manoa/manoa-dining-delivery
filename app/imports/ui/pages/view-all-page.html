@@ -1,14 +1,13 @@
 <template name="View_All_Page">
-  <!--if ur logged in , there is a button to accept it-->
-  <div style="margin-top: 1%" class="ui centered container viewAll">
-    <h1>All Food Delivery Requests</h1>
-    <p class="view all p1">Please login in order to fulfill requests!</p>
-  </div>
-
-  <!--Could add a field if in a dorm, then choose floor just cuz-->
-
-  <div class="ui centered container">
-    <table style="margin-top: 20px" class="ui celled table">
+  <div id="main-wrapper">
+    <!--if ur logged in , there is a button to accept it-->
+    <div style="margin-top: 1%" class="ui centered container viewAll">
+      <h1>All Food Delivery Requests</h1>
+      <p class="view all p1">Please login in order to fulfill requests!</p>
+    </div>
+    <!--Could add a field if in a dorm, then choose floor just cuz-->
+    <div id="white-space" class="ui centered container">
+      <table style="margin-top: 2%" class="ui celled table">
       <thead>
       <tr>
         <th>First Name</th>
@@ -17,6 +16,7 @@
         <th>Room Number</th>
         <th>Phone Number</th>
         <th>Foods Requested</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
@@ -29,9 +29,20 @@
         <td>{{request.room}}</td>
         <td>{{request.phone}}</td>
         <td>{{request.requestedFoods}}</td>
+        <td>
+          {{#if currentUser}}
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          {{/if}}
+        </td>
       </tr>
       {{ /each }}
       </tbody>
-    </table>
+      </table>
+    </div>
   </div>
 </template>
