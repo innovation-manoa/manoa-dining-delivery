@@ -12,7 +12,7 @@ Meteor.methods({
     return GatewayJSON;
   },
   getHaleAlohaMenu() {
-    return GatewayJSON;
+    return HaleAlohaJSON;
   },
 });
 

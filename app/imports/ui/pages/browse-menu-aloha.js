@@ -18,7 +18,22 @@ Template.Browse_Menu_Aloha.helpers({
 
   haleAloha() {
     const instance = Template.instance();
-    console.log(instance.haleAlohaMenu.get().Friday.Lunch);
+    return instance.haleAlohaMenu.get().Friday.Dinner;
+  },
+  fridayLunch() {
+    const instance = Template.instance();
+    return instance.haleAlohaMenu.get().Friday.Lunch;
+  },
+  fridayLunch() {
+    const instance = Template.instance();
+    return instance.haleAlohaMenu.get().Friday.Lunch;
+  },
+  fridayLunch() {
+    const instance = Template.instance();
+    return instance.haleAlohaMenu.get().Friday.Lunch;
+  },
+  fridayLunch() {
+    const instance = Template.instance();
     return instance.haleAlohaMenu.get().Friday.Lunch;
   },
 });

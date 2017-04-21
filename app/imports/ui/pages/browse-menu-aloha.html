@@ -33,39 +33,18 @@
       <thead>
       <tr>
         <!--will not be final table names, will change it all later, for now leave-->
-        <th>Food Type</th>
         <th>Menu Item</th>
         <th>Calories</th>
       </tr>
       </thead>
       <tbody>
-      {{haleAloha}}
-      {{#with haleAloha}}
-      <p> type:  </p>
-      {{#each type in menu.Monday.Dinner.type}}
+      {{#each item_pair in haleAloha}}
       <tr>
-        <!--obv will use the script, here for mockup-->
-        <td> {{type}} </td>
-        <td>Chicken Marsala</td>
-        <td>200</td>
+        {{#each item in item_pair}}
+        <td> {{item}} </td>
+        {{/each}}
       </tr>
       {{/each}}
-      {{/with}}
-      <tr>
-        <td>Chef's Chice</td>
-        <td>Housemade Rosemary Focaccia</td>
-        <td>120</td>
-      </tr>
-      <tr>
-        <td>Grill</td>
-        <td>Classic Cheeseburger on a Toasted Bun</td>
-        <td>340</td>
-      </tr>
-      <tr>
-        <td>Vegetarian/Vegan</td>
-        <td>Tequila Lime Roasted Vegetable Stew</td>
-        <td>40</td>
-      </tr>
       </tbody>
     </table>
     <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
