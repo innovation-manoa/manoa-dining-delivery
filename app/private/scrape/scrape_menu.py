@@ -37,7 +37,7 @@ def test_scrape(soup, tables, categories):
                         'td[class="mnCat mnCal"]').text)
                     all_items.append(item)
         menu_items[categories[i]] = all_items
-        all_items = [];
+        all_items = []
     return menu_items
 
 
@@ -61,14 +61,16 @@ def main():
 
     whole_menu = {}
     for i, tabs in enumerate(browser.find_elements_by_css_selector('div[class=tabs] li')):
-        browser.find_elements_by_css_selector('div[class=tabs] li')[i].click()
+        base = browser.find_elements_by_css_selector('div[class=tabs] li')[i]
+        day = base.text
+        base.click()
         html = browser.page_source
         soup = BeautifulSoup(html, 'lxml')
 
         categories = get_meal_categories(soup)
         tables = get_meal_tables(soup)
         menu_items = test_scrape(soup, tables, categories)
-        whole_menu[days[i]] = menu_items
+        whole_menu[day] = menu_items
 
     outfile = open(selection + '_weekly_menu.json', 'w')
 
