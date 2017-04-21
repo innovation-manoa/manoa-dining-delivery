@@ -39,12 +39,18 @@
       </tr>
       </thead>
       <tbody>
+      {{haleAloha}}
+      {{#with haleAloha}}
+      <p> type:  </p>
+      {{#each type in menu.Monday.Dinner.type}}
       <tr>
         <!--obv will use the script, here for mockup-->
-        <td>Test</td>
+        <td> {{type}} </td>
         <td>Chicken Marsala</td>
         <td>200</td>
       </tr>
+      {{/each}}
+      {{/with}}
       <tr>
         <td>Chef's Chice</td>
         <td>Housemade Rosemary Focaccia</td>

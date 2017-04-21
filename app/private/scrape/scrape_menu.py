@@ -29,18 +29,15 @@ def test_scrape(soup, tables, categories):
     for i, table in enumerate(tables):
         for product in table.findAll("tr"):
             if product.has_attr("class"):
-                if product['class'][0] == "category":
-                    current_category = product.text
-                    all_items = []
-                    types[current_category] = all_items
-                else:
-                    item = {
-                        "name": product.select_one('td[class="mnCat mnName"]').text,
-                        "calories":  product.select_one('td[class="mnCat mnCal"]').text}
-                    types[current_category].append(item)
-        all_types = {"type": types}
-        menu_items[categories[i]] = all_types
-        types = {}
+                if product['class'][0] != "category":
+                    item = []
+                    item.append(product.select_one(
+                        'td[class="mnCat mnName"]').text)
+                    item.append(product.select_one(
+                        'td[class="mnCat mnCal"]').text)
+                    all_items.append(item)
+        menu_items[categories[i]] = all_items
+        all_items = [];
     return menu_items
 
 

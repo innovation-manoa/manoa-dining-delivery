@@ -18,7 +18,8 @@ Template.Browse_Menu_Aloha.helpers({
 
   haleAloha() {
     const instance = Template.instance();
-    return instance.haleAlohaMenu.get();
+    console.log(instance.haleAlohaMenu.get().Friday.Lunch.type);
+    return instance.haleAlohaMenu.get().Friday.Lunch.type;
   },
 });
 
