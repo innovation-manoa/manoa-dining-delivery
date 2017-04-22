@@ -68,6 +68,40 @@
           </td>
         </tr>
         </tbody>
+      <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Dorm</th>
+        <th>Room Number</th>
+        <th>Phone Number</th>
+        <th>Foods Requested</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Fill table with the list of requests -->
+      {{ #each request in requestsList }}
+      <tr>
+        <td>{{request.first}}</td>
+        <td>{{request.last}}</td>
+        <td>{{request.dorm}}</td>
+        <td>{{request.room}}</td>
+        <td>{{request.phone}}</td>
+        <td>{{request.requestedFoods}}</td>
+        <td>
+          {{#if currentUser}}
+          <div class="ui animated button" tabindex="0">
+            <div class="visible content">Fulfill</div>
+            <div class="hidden content">
+              <i class="right arrow icon"></i>
+            </div>
+          </div>
+          {{/if}}
+        </td>
+      </tr>
+      {{ /each }}
+      </tbody>
       </table>
     </div>
     {{/if}}

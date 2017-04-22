@@ -2,61 +2,27 @@
   <!-- place pictures niggaz-->
   <div style="min-height: 35vw" class="ui centered container" id="main-wrapper">
     {{#if currentUser}}
-    <h1 style="margin-top: 2.5%">Request A Delivery</h1>
+    <h1 style="margin-top: 2.5%; margin-bottom: -1%">Request A Delivery</h1>
     <form class="ui form" style="padding: 0px 0px 25px 0px;">
-      <div class="two fields">
-        <div class="required field">
-          <label>First Name</label>
-          <input readonly="" type="text" value="John">
-        </div>
-        <div class="required field">
-          <label>Last Name</label>
-          <input readonly="" type="text" value="Doe">
-        </div>
-      </div>
-      <div class="three fields">
-        <div class="required field">
-          <label>Dorm</label>
-          <div class="ui selection dropdown">
-            <input type="hidden" name="dorm">
-            <i class="dropdown icon"></i>
-            <div class="default text">Dorm</div>
-            <div class="menu">
-              <div class="item" data-value="0">Frear Hall</div>
-              <div class="item" data-value="1">Gateway House</div>
-              <div class="item" data-value="2">Hale Anuenue</div>
-              <div class="item" data-value="3">Hale Laulima</div>
-              <div class="item" data-value="4">Hale Kahawai</div>
-              <div class="item" data-value="5">Johnson Hall</div>
-              <div class="item" data-value="6">Hale Aloha Ilima</div>
-              <div class="item" data-value="7">Hale Aloha Lehua</div>
-              <div class="item" data-value="8">Hale Aloha Lokelani</div>
-              <div class="item" data-value="9">Hale Aloha Mokihana</div>
-            </div>
+      <div class="ui centered container">
+        <form class="ui request-form form {{ errorClass }}" style="padding: 25px 0px 25px 0px;">
+          <div class="two fields">
+            {{> Text_Form_Control name="first" label="First Name" errorMessage=(fieldError "first") required=true }}
+            {{> Text_Form_Control name="last" label="Last Name" errorMessage=(fieldError "last") required=true }}
           </div>
-        </div>
-        <div class="required field">
-          <label>Room Number</label>
-          <input type="text" placeholder="201A">
-        </div>
-        <div class="required field">
-          <label>Phone Number</label>
-          <input type="text" placeholder="808-956-8111">
-        </div>
+          <div class="three fields">
+            {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorms")
+            required=true }}
+            {{> Text_Form_Control name="room" label="Room Number" errorMessage=(fieldError "room") required=true }}
+            {{> Text_Form_Control name="phone" label="Phone Number" errorMessage=(fieldError "phone") required=true }}
+          </div>
+          <div class="field">
+            {{> Select_Form_Control name="requestedFoods" label="Requested Foods" errorMessage=(fieldError
+            "requestedFoods") multiple=true required=true }}
+          </div>
+          <button class="ui primary button" type="submit">Submit Request</button>
+        </form>
       </div>
-      <div class="required field">
-        <label>Requested Foods</label>
-        <select multiple="" class="ui dropdown">
-          <option value="0">Spaghetti & Meatballs with Sauce</option>
-          <option value="1">Garlic Bread</option>
-          <option value="2">Huli Huli Chicken</option>
-          <option value="3">Medium Grain Rice</option>
-          <option value="4">Steamed Fresh Zucchini</option>
-          <option value="5">Classic Cheeseburger on a Toasted Bun</option>
-          <option value="6">Grilled Cheese</option>
-        </select>
-      </div>
-      <button class="ui primary button">Submit Request</button>
     </form>
     {{else}}
     <h1 style="margin-top: 8%;">Please login in order to create a delivery request!</h1>
