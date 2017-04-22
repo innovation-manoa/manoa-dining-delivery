@@ -1,12 +1,18 @@
 <template name="View_All_Page">
-  <div id="main-wrapper">
+  <div style="min-height: 35vw" id="main-wrapper">
     <!--if ur logged in , there is a button to accept it-->
-    <div style="margin-top: 1%" class="ui centered container viewAll">
-      <h1>All Food Delivery Requests</h1>
+    <div class="ui centered container">
+      {{#if currentUser}}
+      <h1 style="margin-top: 2.5%">All Food Delivery Requests</h1>
+      {{else}}
+      <h1 style="margin-top: 2.5%;">All Food Delivery Requests</h1>
       <p class="view all p1">Please login in order to fulfill requests!</p>
+      {{/if}}
     </div>
 
+    {{#if currentUser}}
     <!--Could add a field if in a dorm, then choose floor just cuz-->
+    <!--probably shouldnt show phone number till they accept request-->
     <div id="white-space" class="ui centered container">
       <table style="margin-top: 2%" class="ui celled table">
         <thead>
@@ -15,60 +21,55 @@
           <th>Last Last</th>
           <th>Phone Number</th>
           <th>Current Location / Dormitory</th>
-          <th></th>
+          <th>Fulfill Request</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>Brendt</td>
           <td>McFeeley</td>
-          <td>{{#if currentUser}}8082184913{{/if}}</td>
+          <td>8082184913</td>
           <td>Frear Hall</td>
           <td>
-            {{#if currentUser}}
             <div class="ui animated button" tabindex="0">
               <div class="visible content">Fulfill</div>
               <div class="hidden content">
                 <i class="right arrow icon"></i>
               </div>
             </div>
-            {{/if}}
           </td>
         </tr>
         <tr>
           <td>Terry</td>
           <td>Palomares</td>
-          <td>{{#if currentUser}}8089385183{{/if}}</td>
+          <td>8082395032</td>
           <td>Hale Kahawai</td>
           <td>
-            {{#if currentUser}}
             <div class="ui animated button" tabindex="0">
               <div class="visible content">Fulfill</div>
               <div class="hidden content">
                 <i class="right arrow icon"></i>
               </div>
             </div>
-            {{/if}}
           </td>
         </tr>
         <tr>
           <td>Raven</td>
           <td>Robles</td>
-          <td>{{#if currentUser}}356823943{{/if}}</td>
+          <td>356823943</td>
           <td>Hale Wainani</td>
           <td>
-            {{#if currentUser}}
             <div class="ui animated button" tabindex="0">
               <div class="visible content">Fulfill</div>
               <div class="hidden content">
                 <i class="right arrow icon"></i>
               </div>
             </div>
-            {{/if}}
           </td>
         </tr>
         </tbody>
       </table>
     </div>
+    {{/if}}
   </div>
 </template>

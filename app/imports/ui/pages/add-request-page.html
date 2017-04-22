@@ -1,7 +1,9 @@
 <template name="Add_Request_Page">
-  <div class="ui container" style="width: 50%;">
-    <form class="ui form" style="padding: 25px 0px 25px 0px;">
-      <h4 class="ui dividing header">Request a Delivery</h4>
+  <!-- place pictures niggaz-->
+  <div style="min-height: 35vw" class="ui centered container" id="main-wrapper">
+    {{#if currentUser}}
+    <h1 style="margin-top: 2.5%">Request A Delivery</h1>
+    <form class="ui form" style="padding: 0px 0px 25px 0px;">
       <div class="two fields">
         <div class="required field">
           <label>First Name</label>
@@ -56,6 +58,9 @@
       </div>
       <button class="ui primary button">Submit Request</button>
     </form>
+    {{else}}
+    <h1 style="margin-top: 8%;">Please login in order to create a delivery request!</h1>
+    {{/if}}
   </div>
 </template>
 
