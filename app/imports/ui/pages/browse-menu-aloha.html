@@ -39,18 +39,8 @@
         </thead>
         <tbody>
 
-        <!--{{#each item_pair in haleAloha}}-->
-        <!--<tr>-->
-          <!--{{#each item in item_pair}}-->
-          <!--<td> {{item}}</td>-->
-          <!--{{/each}}-->
-        <!--</tr>-->
-        <!--{{/each}}-->
-        <p> its lit </p>
+        {{> Template.dynamic template="menu_content" data=tabData}}
 
-        {{> Template.dynamic template="content" data=tabData}}
-
-        <p> its kind of lit </p>
         </tbody>
       </table>
       <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">

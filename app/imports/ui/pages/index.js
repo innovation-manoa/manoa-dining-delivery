@@ -26,3 +26,7 @@ import './browse-menu-gateway.js';
 
 import './about-us-page.html';
 import './about-us-page.js';
+
+import './menu-content.html';
+import './menu-content.js';
+

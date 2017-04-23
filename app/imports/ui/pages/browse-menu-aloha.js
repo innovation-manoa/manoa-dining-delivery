@@ -11,7 +11,6 @@ Template.Browse_Menu_Aloha.onCreated(function onCreated() {
   });
 });
 
-
 Template.Browse_Menu_Aloha.helpers({
   /**
    * @return {*} The list of menu items stored in the JSON file.
@@ -36,53 +35,7 @@ Template.Browse_Menu_Aloha.helpers({
     console.log(data[tab]);
     return { contentType: tab, items: data[tab] };
   },
-  // haleAloha() {
-  //   const instance = Template.instance();
-  //   return instance.haleAlohaMenu.get().Friday.Dinner;
-  // },
-  // fridayLunch() {
-  //   const instance = Template.instance();
-  //   return instance.haleAlohaMenu.get().Friday.Lunch;
-  // },
-  // fridayLunch() {
-  //   const instance = Template.instance();
-  //   return instance.haleAlohaMenu.get().Friday.Lunch;
-  // },
-  // fridayLunch() {
-  //   const instance = Template.instance();
-  //   return instance.haleAlohaMenu.get().Friday.Lunch;
-  // },
-  // fridayLunch() {
-  //   const instance = Template.instance();
-  //   return instance.haleAlohaMenu.get().Friday.Lunch;
-  // },
 });
-
-// Template.Browse_Menu_Aloha.helpers({
-//   tab: function() {
-//     return Template.instance().currentTab.get();
-//   },
-//   tabData: function() {
-//     var tab = Template.instance().currentTab.get();
-//
-//     var data = {
-//       "books": [
-//         { "name": "Seeking Wisdom: From Darwin to Munger", "creator": "Peter Bevelin" }
-//             [...]
-//     ],
-//     "movies": [
-//       { "name": "Ghostbusters", "creator": "Dan Aykroyd" },
-//       [...]
-//     ],
-//         "games": [
-//       { "name": "Grand Theft Auto V", "creator": "Rockstar Games" },
-//       [...]
-//     ]
-//   };
-//
-//     return data[ tab ];
-//   }
-// });
 
 Template.Browse_Menu_Aloha.events({
   'click .item a'(event, template) {

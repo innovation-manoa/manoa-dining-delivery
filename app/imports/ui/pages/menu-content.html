@@ -1,12 +1,9 @@
-<template name="content">
-<h1> TESTING</h1>
-
-
-  <!--<ul class="list-group">-->
-    <!--{{#each item in this.items}}-->
-      <!--<p> {{item}} </p>-->
-    <!--{{/each}}-->
-  <!--</ul>-->
-
-
+<template name="menu_content">
+  {{#each item_pair in this.items}}
+  <tr>
+  {{#each item in item_pair}}
+  <td> {{item}}</td>
+  {{/each}}
+  </tr>
+  {{/each}}
 </template>
