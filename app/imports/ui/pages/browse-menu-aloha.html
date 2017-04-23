@@ -13,80 +13,83 @@
   {{/If_Logged_In}}
   -->
   <div id="main-wrapper">
-  <div style="margin-top: 1%" class="ui centered container browseAloha">
-    <h1>Hale Aloha Menu</h1>
-  </div>
+    <div style="margin-top: 1%" class="ui centered container browseAloha">
+      <h1>Hale Aloha Menu</h1>
+    </div>
 
-  <div class="ui centered container weekdays">
-    <div class="ui seven item menu">
-      <a class="active item">Sunday</a>
-      <a class="item">Monday</a>
-      <a class="item">Tuesday</a>
-      <a class="item">Wednesday</a>
-      <a class="item">Thursday</a>
-      <a class="item">Friday</a>
-      <a class="item">Saturday</a>
+    <div class="ui centered container weekdays">
+      <div class="ui seven item menu">
+        <a data-template="Sunday" class="active item">Sunday</a>
+        <a data-template="Monday" class="item">Monday</a>
+        <a data-template="Tuesday" class="item">Tuesday</a>
+        <a data-template="Wednesday" class="item">Wednesday</a>
+        <a data-template="Thursday" class="item">Thursday</a>
+        <a data-template="Friday" class="item">Friday</a>
+        <a data-template="Saturday" class="item">Saturday</a>
+      </div>
+    </div>
+    <div class="ui centered container">
+      <table style="margin-top: 20px" class="ui centered basic table">
+        <thead>
+        <tr>
+          <!--will not be final table names, will change it all later, for now leave-->
+          <th>Menu Item</th>
+          <th>Calories</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <!--{{#each item_pair in haleAloha}}-->
+        <!--<tr>-->
+          <!--{{#each item in item_pair}}-->
+          <!--<td> {{item}}</td>-->
+          <!--{{/each}}-->
+        <!--</tr>-->
+        <!--{{/each}}-->
+        <p> its lit </p>
+
+        {{> Template.dynamic template="content" data=tabData}}
+
+        <p> its kind of lit </p>
+        </tbody>
+      </table>
+      <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
     </div>
   </div>
-  <div class="ui centered container">
-    <table style="margin-top: 20px" class="ui centered basic table">
-      <thead>
-      <tr>
-        <!--will not be final table names, will change it all later, for now leave-->
-        <th>Menu Item</th>
-        <th>Calories</th>
-      </tr>
-      </thead>
-      <tbody>
-      {{#each item_pair in haleAloha}}
-      <tr>
-        {{#each item in item_pair}}
-        <td> {{item}} </td>
-        {{/each}}
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-    <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
-  </div>
-  </div>
+
 
   <!--
   insert pictures on this page
   hale aloha only has dinner on weekdays, brunch and dinner on weekends, do logic for that later
   -->
 
-  <script>
-    menu = {};
-
-    // ready event
-    menu.ready = function() {
-
-      // selector cache
-      var
-          $menuItem = $('.menu a.item, .menu .link.item'),
-          // alias
-          handler = {
-            activate: function() {
-              $(this)
-                  .addClass('active')
-                  .closest('.ui.seven.item.menu')
-                  .find('.item')
-                  .not($(this))
-                  .removeClass('active');
-            }
-          }
-      ;
-
-      $menuItem
-          .on('click', handler.activate)
-      ;
-
-    };
 
 
-    // attach ready event
-    $(document).ready(menu.ready);
-  </script>
+  <!--<script>-->
+  <!--menu = {};-->
+  <!--// ready event-->
+  <!--menu.ready = function () {-->
+    <!--// selector cache-->
+    <!--var-->
+        <!--$menuItem = $('.menu a.item, .menu .link.item'),-->
+        <!--// alias-->
+        <!--handler = {-->
+          <!--activate: function () {-->
+            <!--$(this)-->
+                <!--.addClass('active')-->
+                <!--.closest('.ui.seven.item.menu')-->
+                <!--.find('.item')-->
+                <!--.not($(this))-->
+                <!--.removeClass('active');-->
+          <!--}-->
+        <!--}-->
+    <!--;-->
+    <!--$menuItem-->
+        <!--.on('click', handler.activate);-->
+  <!--};-->
+
+  <!--// attach ready event-->
+  <!--$(document).ready(menu.ready);-->
+<!--</script>-->
 
 </template>
