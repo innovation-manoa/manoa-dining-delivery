@@ -1,92 +1,40 @@
 <template name="Browse_Menu_Gateway">
-  <div id="main-wrapper">
-  <div style="margin-top: 1%" class="ui centered container browseAloha">
-    <h1>Hale Aloha Menu</h1>
-  </div>
-
-  <div class="ui centered container weekdays">
-    <div class="ui seven item menu">
-      <a class="active item">Sunday</a>
-      <a class="item">Monday</a>
-      <a class="item">Tuesday</a>
-      <a class="item">Wednesday</a>
-      <a class="item">Thursday</a>
-      <a class="item">Friday</a>
-      <a class="item">Saturday</a>
-    </div>
-  </div>
-  <div class="ui centered container">
-    <table style="margin-top: 20px" class="ui centered basic table">
-      <thead>
-      <tr>
-        <!--will not be final table names, will change it all later, for now leave-->
-        <th>Food Type</th>
-        <th>Menu Item</th>
-        <th>Calories</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <!--obv will use the script, here for mockup-->
-        <td>Breakfast</td>
-        <td>Peaches & Cream Oatmeal</td>
-        <td>140</td>
-      </tr>
-      <tr>
-        <td>Breakfast</td>
-        <td>Chocolate Chip Pancakes</td>
-        <td>190</td>
-      </tr>
-      <tr>
-        <td>Grill</td>
-        <td>Quesadilla Bar</td>
-        <td>420</td>
-      </tr>
-      <tr>
-        <td>Vegetarian/Vegan</td>
-        <td>Macaroni & Cheese Casserette</td>
-        <td>500</td>
-      </tr>
-      </tbody>
-    </table>
-    <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
-  </div>
-  </div>
 
   <!--
-  insert pictures on this page
-  hale aloha only has dinner on weekdays, brunch and dinner on weekends, do logic for that later
+  {{#If_Logged_In}}
+
+    <div style="padding-top: 20px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+  {{/If_Logged_In}}
   -->
 
-  <script>
-    menu = {};
+  <div id="main-wrapper">
+    <div style="margin: 2%" class="ui centered container browseAloha">
+      <h1>Gateway Cafeteria Menu</h1>
+    </div>
 
-    // ready event
-    menu.ready = function () {
+    <div class="ui centered container weekdays">
+      <div class="ui seven item menu">
+        <a data-template="Sunday" class="active item">Sunday</a>
+        <a data-template="Monday" class="item">Monday</a>
+        <a data-template="Tuesday" class="item">Tuesday</a>
+        <a data-template="Wednesday" class="item">Wednesday</a>
+        <a data-template="Thursday" class="item">Thursday</a>
+        <a data-template="Friday" class="item">Friday</a>
+        <a data-template="Saturday" class="item">Saturday</a>
+      </div>
+    </div>
+    <div class="ui centered container">
 
-      // selector cache
-      var
-          $menuItem = $('.menu a.item, .menu .link.item'),
-          // alias
-          handler = {
-            activate: function () {
-              $(this)
-                  .addClass('active')
-                  .closest('.ui.seven.item.menu')
-                  .find('.item')
-                  .not($(this))
-                  .removeClass('active');
-            }
-          }
-      ;
+      {{> Template.dynamic template="menu_content" data=tabData}}
 
-      $menuItem
-          .on('click', handler.activate)
-      ;
-
-    };
-
-    // attach ready event
-    $(document).ready(menu.ready);
-  </script>
+      <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
+    </div>
+  </div>
 </template>

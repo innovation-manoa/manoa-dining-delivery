@@ -1,4 +1,5 @@
 <template name="Browse_Menu_Aloha">
+
   <!--
   {{#If_Logged_In}}
 
@@ -12,8 +13,9 @@
     </div>
   {{/If_Logged_In}}
   -->
+
   <div id="main-wrapper">
-    <div style="margin-top: 1%" class="ui centered container browseAloha">
+    <div style="margin: 2%" class="ui centered container browseAloha">
       <h1>Hale Aloha Menu</h1>
     </div>
 
@@ -29,57 +31,11 @@
       </div>
     </div>
     <div class="ui centered container">
-      <table style="margin-top: 20px" class="ui centered basic table">
-        <thead>
-        <tr>
-          <!--will not be final table names, will change it all later, for now leave-->
-          <th>Menu Item</th>
-          <th>Calories</th>
-        </tr>
-        </thead>
-        <tbody>
 
         {{> Template.dynamic template="menu_content" data=tabData}}
 
-        </tbody>
-      </table>
       <img style="margin-top: 1%" class="ui centered image" src="http://placehold.it/1300x550">
     </div>
   </div>
-
-
-  <!--
-  insert pictures on this page
-  hale aloha only has dinner on weekdays, brunch and dinner on weekends, do logic for that later
-  -->
-
-
-
-  <!--<script>-->
-  <!--menu = {};-->
-  <!--// ready event-->
-  <!--menu.ready = function () {-->
-    <!--// selector cache-->
-    <!--var-->
-        <!--$menuItem = $('.menu a.item, .menu .link.item'),-->
-        <!--// alias-->
-        <!--handler = {-->
-          <!--activate: function () {-->
-            <!--$(this)-->
-                <!--.addClass('active')-->
-                <!--.closest('.ui.seven.item.menu')-->
-                <!--.find('.item')-->
-                <!--.not($(this))-->
-                <!--.removeClass('active');-->
-          <!--}-->
-        <!--}-->
-    <!--;-->
-    <!--$menuItem-->
-        <!--.on('click', handler.activate);-->
-  <!--};-->
-
-  <!--// attach ready event-->
-  <!--$(document).ready(menu.ready);-->
-<!--</script>-->
 
 </template>

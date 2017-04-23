@@ -23,23 +23,21 @@ Template.Browse_Menu_Aloha.helpers({
     const tab = Template.instance().currentTab.get();
 
     const data = {
-      "Sunday": instance.haleAlohaMenu.get().Sunday.Dinner,
-      "Monday": instance.haleAlohaMenu.get().Monday.Dinner,
-      "Tuesday": instance.haleAlohaMenu.get().Sunday.Dinner,
-      "Wednesday": instance.haleAlohaMenu.get().Wednesday.Dinner,
-      "Thursday": instance.haleAlohaMenu.get().Thursday.Dinner,
-      "Friday": instance.haleAlohaMenu.get().Friday.Dinner,
-      "Saturday": instance.haleAlohaMenu.get().Saturday.Dinner,
+      'Sunday': instance.haleAlohaMenu.get().Sunday,
+      'Monday': instance.haleAlohaMenu.get().Monday,
+      'Tuesday': instance.haleAlohaMenu.get().Tuesday,
+      'Wednesday': instance.haleAlohaMenu.get().Wednesday,
+      'Thursday': instance.haleAlohaMenu.get().Thursday,
+      'Friday': instance.haleAlohaMenu.get().Friday,
+      'Saturday': instance.haleAlohaMenu.get().Saturday,
     };
 
-    console.log(data[tab]);
     return { contentType: tab, items: data[tab] };
   },
 });
 
 Template.Browse_Menu_Aloha.events({
   'click .item a'(event, template) {
-    console.log('clicked');
     const currentTab = $(event.target).closest('a');
 
     currentTab.addClass('active');
