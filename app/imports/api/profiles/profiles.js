@@ -18,31 +18,31 @@ export const ProfilesSchema = new SimpleSchema({
   first: {
     label: 'first',
     type: String,
-    optional: false,
+    optional: true,
     max: 20,
   },
   last: {
     label: 'last',
     type: String,
-    optional: false,
+    optional: true,
     max: 20,
   },
   dorm: {
     label: 'dorm',
     type: String,
-    optional: false,
+    optional: true,
     max: 50,
   },
   room: {
     label: 'room',
     type: String,
-    optional: false,
+    optional: true,
     max: 10,
   },
   phone: {
     label: 'phone',
     type: String,
-    optional: false,
+    optional: true,
     regEx: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
   },
 });
