@@ -9,8 +9,8 @@ import './home-page.html';
 import './list-stuff-page.html';
 import './list-stuff-page.js';
 
-import './edit-profile-page.html';
-import './edit-profile-page.js';
+import './profile-page.html';
+import './profile-page.js';
 
 import './view-all-page.html';
 import './view-all-page.js';
