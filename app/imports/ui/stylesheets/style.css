@@ -1,35 +1,21 @@
 html {
   height: 100%;
-  min-height: 100% !important;
 }
 
 body {
   height: 100%;
-  min-height: 100% !important;
   overflow: auto;
-}
-
-.ui.centered.borderless.top.menu {
-  box-shadow: none;
-  border: none;
-  background-color: #F7F7F7;
-  margin-top: -2%;
-}
-
-.text.img {
-  position: absolute;
-  font-size: 36px;
-  font-weight: bold;
-  font-family: 'Cinzel';
-  bottom: 65%;
 }
 
 .ui.grid.header {
   margin-left: 20%;
+  margin-bottom: 0.5%;
+  height: auto;
+  width: auto;
 }
 
-.six.wide.column.login {
-  margin-top: 1%;
+.two.wide.column.header {
+  padding-top: 2%
 }
 
 .fitted.item.login {
@@ -74,6 +60,11 @@ body {
   margin-top: -4.2%;
 }
 
+.ui.centered.container.TCG {
+  height: auto;
+  padding-bottom: 1%;
+}
+
 .large.ui.button {
   margin-left: 41.5%;
   margin-top: -3%;
@@ -98,6 +89,7 @@ body {
 #triColHead {
   font-size: 45px;
   margin-bottom: -2%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #triColBody {
@@ -139,9 +131,15 @@ td {
 
 #main-wrapper {
   min-height: 100%;
-  height: auto;
+  height: 100% !important;
 }
 
 #white-space {
   padding-bottom: 20.5%;
+}
+
+#__blaze-root {
+  min-height: 100%;
+  height: auto;
+  flex-direction: column;
 }
