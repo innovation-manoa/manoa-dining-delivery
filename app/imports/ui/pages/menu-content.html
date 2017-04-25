@@ -1,0 +1,96 @@
+<template name="menu_content">
+  <div style="margin: 25px;" class="ui styled fluid accordion">
+    {{#if this.items.Breakfast}}
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Breakfast
+    </div>
+    <div class="content">
+      <table style="margin-top: 20px" class="ui centered basic table">
+        <thead>
+        <tr>
+          <!--will not be final table names, will change it all later, for now leave-->
+          <th>Menu Item</th>
+          <th>Calories</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each item_pair in this.items.Breakfast}}
+        <tr>
+          {{#each item in item_pair}}
+          <td>{{item}}</td>
+          {{/each}}
+        </tr>
+        {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+    {{/if}}
+
+
+    {{#if this.items.Lunch}}
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Lunch
+    </div>
+    <div class="content">
+      <table style="margin-top: 20px" class="ui centered basic table">
+        <thead>
+        <tr>
+          <!--will not be final table names, will change it all later, for now leave-->
+          <th>Menu Item</th>
+          <th>Calories</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each item_pair in this.items.Lunch}}
+        <tr>
+          {{#each item in item_pair}}
+          <td>{{item}}</td>
+          {{/each}}
+        </tr>
+        {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+    {{/if}}
+
+    {{#if this.items.Dinner}}
+    <div class="title">
+      <i class="dropdown icon"></i>
+      Dinner
+    </div>
+    <div class="content">
+      <table style="margin-top: 20px" class="ui centered basic table">
+        <thead>
+        <tr>
+          <!--will not be final table names, will change it all later, for now leave-->
+          <th>Menu Item</th>
+          <th>Calories</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each item_pair in this.items.Dinner}}
+        <tr>
+          {{#each item in item_pair}}
+          <td>{{item}}</td>
+          {{/each}}
+        </tr>
+        {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+    {{/if}}
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.ui.accordion').accordion();
+    });
+  </script>
+</template>
+

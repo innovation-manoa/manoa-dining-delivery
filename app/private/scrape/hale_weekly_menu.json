@@ -1,0 +1,686 @@
+{
+    "Friday": {
+        "Dinner": [
+            [
+                "Chicken Fried Steak with Old Bay Gravy",
+                "210"
+            ],
+            [
+                "Cheddar Mashed Potatoes",
+                "160"
+            ],
+            [
+                "Peas & Mushrooms",
+                "90"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Grilled PB Chocolate & Banana Sandwich",
+                "810"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Eggplant Parmesan Pizzetta",
+                "410"
+            ],
+            [
+                "Roasted Tomato Tortilla Soup",
+                "80"
+            ],
+            [
+                "Homestyle Chicken and Rice Soup",
+                "130"
+            ],
+            [
+                "Macaroni & Cheese",
+                "500"
+            ],
+            [
+                "Sweet & Sour Tofu Stir Fry",
+                "240"
+            ],
+            [
+                "Jasmine Steamed Rice",
+                "150"
+            ],
+            [
+                "Chipotle BBQ Chicken",
+                "110"
+            ],
+            [
+                "Yellow Taco Shell",
+                "50"
+            ],
+            [
+                "Cilantro Slaw",
+                "45"
+            ]
+        ]
+    },
+    "Monday": {
+        "Dinner": [
+            [
+                "Mahi Mahi Fillets, Raw, Fresh",
+                "80"
+            ],
+            [
+                "Seasoned Panko Crumbs",
+                "5"
+            ],
+            [
+                "Roasted Black Seaweed (Furikake)",
+                "10"
+            ],
+            [
+                "Wasabi Mayonnaise",
+                "35"
+            ],
+            [
+                "Medium Grain Rice",
+                "140"
+            ],
+            [
+                "Firecracker Cole Slaw",
+                "90"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Veggie Burger",
+                "320"
+            ],
+            [
+                "Ratatouille Pizzetta",
+                "140"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Carrot and Coriander Soup",
+                "80"
+            ],
+            [
+                "Old-Fashioned Chicken Noodle Soup",
+                "150"
+            ],
+            [
+                "Chicken Nuggets",
+                "320"
+            ],
+            [
+                "Curried Indian Lentil Dal & Rice Plate",
+                "380"
+            ],
+            [
+                "Baigan Bartha (Indian Eggplant)",
+                "80"
+            ],
+            [
+                "Biryani Rice",
+                "280"
+            ],
+            [
+                "Kalua Pig & Cabbage with Rice",
+                "640"
+            ],
+            [
+                "Steamed Fresh Baby Carrots",
+                "40"
+            ]
+        ]
+    },
+    "Saturday": {
+        "Dinner": [
+            [
+                "Herbed Grilled Chicken Thigh",
+                "130"
+            ],
+            [
+                "Dirty Mash Potatoes",
+                "120"
+            ],
+            [
+                "California Mixed Vegetable",
+                "40"
+            ],
+            [
+                "Rajun Cajun Burger",
+                "440"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Cheeseburger Snowshoe Pizza",
+                "150"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Tomato Bisque with Fresh Basil",
+                "60"
+            ],
+            [
+                "Hearty Beef Vegetable Soup",
+                "70"
+            ],
+            [
+                "Vegetarian Soft Taco",
+                "180"
+            ],
+            [
+                "Spicy Eggplant with Garbanzo Beans",
+                "200"
+            ],
+            [
+                "Jasmine Steamed Rice",
+                "110"
+            ],
+            [
+                "Brown Sugar Rubbed Pork Loin",
+                "160"
+            ],
+            [
+                "Simple Baked Sweet Potato",
+                "190"
+            ],
+            [
+                "Whole Green Beans",
+                "30"
+            ]
+        ],
+        "Lunch": [
+            [
+                "Omelet Bar",
+                "240"
+            ],
+            [
+                "Hard Cooked Cage Free Egg",
+                "70"
+            ],
+            [
+                "Oatmeal with Toppings",
+                "160"
+            ],
+            [
+                "Scrambled Eggs with Margarine",
+                "180"
+            ],
+            [
+                "Cooked Portuguese Sausage, Sliced",
+                "390"
+            ],
+            [
+                "Belgian Waffles",
+                "140"
+            ],
+            [
+                "Diced Hash Brown Potatoes w/Skin, Frozen",
+                "35"
+            ],
+            [
+                "Chicken Mediterranean Biggie Sandwich",
+                "210"
+            ],
+            [
+                "Made to Order Deli Bar",
+                "280"
+            ],
+            [
+                "Egg & Cheese Bagel with Ham",
+                "320"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Cheese Pizza Bagel",
+                "150"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Vegetarian Lentil & Spinach Soup",
+                "170"
+            ],
+            [
+                "Red Curry Chicken Soup (Mindful)",
+                "130"
+            ],
+            [
+                "Penne with Tomato Vodka Sauce Plate",
+                "250"
+            ],
+            [
+                "Vegan Curried Rice & Bean Pilaf",
+                "300"
+            ],
+            [
+                "Golden Raisin, Tomato & Onion Chutney",
+                "35"
+            ],
+            [
+                "Grilled Balsamic Chicken",
+                "100"
+            ],
+            [
+                "Coastal Style White Rice",
+                "140"
+            ],
+            [
+                "Broccoli Florets",
+                "30"
+            ]
+        ]
+    },
+    "Sunday": {
+        "Dinner": [
+            [
+                "Roasted Beef Top Round",
+                "140"
+            ],
+            [
+                "Demi-Glace Sauce",
+                "25"
+            ],
+            [
+                "Oven Roast Rosemary Red Potatoes",
+                "120"
+            ],
+            [
+                "Mixed Vegetables",
+                "70"
+            ],
+            [
+                "Chicken & Cheese Quesadilla",
+                "380"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Veggie Burger",
+                "320"
+            ],
+            [
+                "Mediterranean Snowshoe Pizza",
+                "130"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Roasted Garden Vegetable Soup",
+                "40"
+            ],
+            [
+                "Bacon Corn Chowder",
+                "170"
+            ],
+            [
+                "Baked Ziti with Marinara",
+                "180"
+            ],
+            [
+                "Spanish Style Garbanzo Beans",
+                "110"
+            ],
+            [
+                "Charred Corn with Chili & Garlic",
+                "60"
+            ],
+            [
+                "Roast  Turkey Breast",
+                "120"
+            ],
+            [
+                "Parsley Boiled Potatoes",
+                "110"
+            ],
+            [
+                "Green Peas",
+                "90"
+            ]
+        ],
+        "Lunch": [
+            [
+                "Oatmeal with Toppings",
+                "160"
+            ],
+            [
+                "Scrambled Eggs with Margarine",
+                "180"
+            ],
+            [
+                "Sausage  Patty",
+                "180"
+            ],
+            [
+                "Hash Browned Potato Patty",
+                "130"
+            ],
+            [
+                "Omelet Bar",
+                "240"
+            ],
+            [
+                "French Toast Sticks",
+                "140"
+            ],
+            [
+                "Chicken Caprese Biggie Sandwich",
+                "320"
+            ],
+            [
+                "Made to Order Deli Bar",
+                "280"
+            ],
+            [
+                "Egg & Cheese Biscuit with Bacon",
+                "420"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Corndogs",
+                "320"
+            ],
+            [
+                "Potato Leek Soup (Mindful)",
+                "130"
+            ],
+            [
+                "Hearty Beef Vegetable Soup",
+                "90"
+            ],
+            [
+                "Channa  Masala",
+                "240"
+            ],
+            [
+                "Biryani Rice",
+                "280"
+            ],
+            [
+                "Green Peas",
+                "90"
+            ],
+            [
+                "Mushroom Chili",
+                "130"
+            ],
+            [
+                "Cranberry Harvest Chicken",
+                "120"
+            ],
+            [
+                "Baked  Potato",
+                "160"
+            ],
+            [
+                "Lightly Spiced Fresh Carrots",
+                "50"
+            ]
+        ]
+    },
+    "Thursday": {
+        "Dinner": [
+            [
+                "Spaghetti & Marinara Sauce",
+                "290"
+            ],
+            [
+                "Herb Seasoned Breadsticks",
+                "80"
+            ],
+            [
+                "Chicken Katsu",
+                "390"
+            ],
+            [
+                "Pork Potstickers Gyoza",
+                "140"
+            ],
+            [
+                "Sticky Rice",
+                "160"
+            ],
+            [
+                "Steamed  Corn",
+                "60"
+            ],
+            [
+                "Grilled Steak  (Simple Serving, Upon Request)",
+                "160"
+            ],
+            [
+                "Teriyaki Sauce",
+                "25"
+            ],
+            [
+                "Sauteed Onions",
+                "20"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "210"
+            ],
+            [
+                "Ripe Tomato Pizzetta",
+                "290"
+            ],
+            [
+                "Baked Potato Bar",
+                "260"
+            ],
+            [
+                "Bacon Corn Chowder",
+                "170"
+            ],
+            [
+                "Miso Soup",
+                "50"
+            ],
+            [
+                "Kalbi Ribs",
+                "440"
+            ],
+            [
+                "Korean Sesame BBQ Chicken",
+                "130"
+            ],
+            [
+                "Pork Potstickers Gyoza",
+                "140"
+            ],
+            [
+                "Korean Style Beansprouts & Watercress",
+                "170"
+            ],
+            [
+                "Stuffed Shells with House Marinara",
+                "240"
+            ],
+            [
+                "Fried Eggplant Disk",
+                "240"
+            ],
+            [
+                "Bulgar Wheat  Salad",
+                "160"
+            ]
+        ]
+    },
+    "Wednesday": {
+        "Dinner": [
+            [
+                "Pasta with Carbonara Sauce",
+                "760"
+            ],
+            [
+                "Housemade Rosemary Focaccia",
+                "120"
+            ],
+            [
+                "Chicken Fried Steak with Old Bay Gravy",
+                "210"
+            ],
+            [
+                "Mashed Red Potatoes",
+                "120"
+            ],
+            [
+                "Steamed Fresh Zucchini",
+                "15"
+            ],
+            [
+                "Classic Cheeseburger on a Toasted Bun",
+                "340"
+            ],
+            [
+                "Grilled Cheese",
+                "400"
+            ],
+            [
+                "French  Fries",
+                "260"
+            ],
+            [
+                "Chicken Patty Sandwich",
+                "380"
+            ],
+            [
+                "The Hawaiian",
+                "260"
+            ],
+            [
+                "Cheese Pizza - Slice",
+                "190"
+            ],
+            [
+                "Pepperoni  Pizza",
+                "280"
+            ],
+            [
+                "Tuscan White Bean Stew",
+                "330"
+            ],
+            [
+                "Roast Turkey &  Rice Soup",
+                "120"
+            ],
+            [
+                "Crispy Chicken Tenders",
+                "230"
+            ],
+            [
+                "Vegan Meat Loaf",
+                "290"
+            ],
+            [
+                "Tempura-fried Broccoli with Asian Sauce",
+                "380"
+            ]
+        ]
+    }
+}

@@ -58,6 +58,7 @@ FlowRouter.route('/hale_aloha_menu', {
   },
 });
 
+
 FlowRouter.route('/gateway_menu', {
   name: 'Browse_Menu_Gateway',
   action() {
