@@ -18,7 +18,14 @@
           </a>
         </div>
         <div class="column hmpg">
-          <a style="height: auto; max-width: 100%" class="hmpg img"><img src="http://placehold.it/500x600"></a>
+          <div style="max-width: 500px" class='owl-carousel'>
+            <img
+                src="https://s-media-cache-ak0.pinimg.com/originals/51/49/72/514972081cc73efef16dffe23dedd99a.jpg" style="height: 600px; width: 500px">
+            <img
+                src="https://s-media-cache-ak0.pinimg.com/originals/51/49/72/514972081cc73efef16dffe23dedd99a.jpg" style="height: 600px; width: 500px">
+            <img
+                src="https://s-media-cache-ak0.pinimg.com/originals/51/49/72/514972081cc73efef16dffe23dedd99a.jpg" style="height: 600px; width: 500px">
+          </div>
         </div>
       </div>
 
@@ -47,5 +54,17 @@
       </div>
     </div>
   </div>
+
+  <script>
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      autoplay: true,
+      autoPlaySpeed: 10000,
+      navSpeed: 10000,
+      loop: true,
+      autoplayHoverPause: true,
+      dots: false,
+    });
+  </script>
 
 </template>
