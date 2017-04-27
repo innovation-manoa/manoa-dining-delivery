@@ -1,0 +1,29 @@
+<template name="Profile_Page">
+  {{ #If_Logged_In }}
+  {{ #if isValidUser }}
+  {{ #if Template.subscriptionsReady }}
+  <div class="ui container" style="padding-top: 20px; width:50%">
+    <form class="ui form profile-form {{ successClass }} {{ errorClass }}">
+      <h4 class="ui dividing header">Profile</h4>
+      <div class="two fields">
+        {{> Text_Form_Control name="first" placeholder="John" value=(profileField 'first') label="First Name" errorMessage=(fieldError "first") }}
+        {{> Text_Form_Control name="last" placeholder="Doe" value=(profileField 'last') label="Last Name" errorMessage=(fieldError "last") }}
+      </div>
+      <div class="three fields">
+        {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorm") }}
+        {{> Text_Form_Control name="room" placeholder="201B" value=(profileField 'room') label="Room Number" errorMessage=(fieldError "room") }}
+        {{> Text_Form_Control name="phone" placeholder="808-956-8111" value=(profileField 'phone') label="Phone Number" errorMessage=(fieldError "phone") }}
+      </div>
+      <button class="ui primary button" type="submit">Submit</button>
+
+      {{#if displaySuccessMessage}}
+      <div class="ui success message">
+        <p>Your profile has been successfully updated.</p>
+      </div>
+      {{/if}}
+    </form>
+  </div>
+  {{ /if }}
+  {{ /if }}
+  {{ /If_Logged_In }}
+</template>

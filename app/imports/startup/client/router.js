@@ -22,10 +22,10 @@ FlowRouter.route('/add', {
   },
 });
 
-FlowRouter.route('/edit-profile/', {
-  name: 'Edit_Profile_Page',
+FlowRouter.route('/profile/:username/', {
+  name: 'Profile_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Edit_Profile_Page' });
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
