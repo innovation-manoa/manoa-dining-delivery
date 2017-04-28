@@ -1,0 +1,41 @@
+<template name="Fulfill_Request_Page">
+  <div class="ui centered container" style="padding-top: 2%; padding-bottom: 2%">
+    <table class="ui celled table">
+      <thead>
+      <tr>
+        <th colspan="2" class="center aligned two wide">Request Details</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="center aligned">Name:</td>
+        <td>{{ requestField 'first' }} {{ requestField 'last' }}</td>
+      </tr>
+      <tr>
+        <td class="center aligned">Location:</td>
+        <td>{{ requestField 'dorm' }} {{ requestField 'room' }}</td>
+      </tr>
+      <tr>
+        <td class="center aligned">Phone Number:</td>
+        <td>{{ requestField 'phone' }}</td>
+      </tr>
+      <tr>
+        <td class="center aligned">Foods Requested:</td>
+        <td>{{ requestField 'requestedFoods' }}</td>
+      </tr>
+      </tbody>
+    </table>
+    <form class="fulfill-request">
+      <button class="ui right floated green right labeled icon button" type="submit">
+        <i class="checkmark icon"></i>
+        Done
+      </button>
+    </form>
+    <form class="cancel-request">
+      <button class="ui right floated red right labeled icon button" type="submit">
+        <i class="ban icon"></i>
+        Cancel
+      </button>
+    </form>
+  </div>
+</template>
