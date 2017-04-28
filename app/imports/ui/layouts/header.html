@@ -3,9 +3,11 @@
     <div class="six wide column">
       <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
     </div>
+    {{ #if currentUser }}
     <div class="two wide column header">
       <a style="color: black;" class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a>
     </div>
+    {{ /if }}
     <div style="margin-left: 2.1%" class="two wide column header">
       <div class="ui dropdown">
         Menus

@@ -73,6 +73,13 @@ FlowRouter.route('/about', {
   },
 });
 
+FlowRouter.route('/fulfill-request/:_id', {
+  name: 'Fulfill_Request_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Fulfill_Request_Page' });
+  },
+});
+
 
 FlowRouter.notFound = {
   action() {

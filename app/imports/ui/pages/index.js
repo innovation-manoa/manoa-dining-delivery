@@ -30,3 +30,5 @@ import './about-us-page.js';
 import './menu-content.html';
 import './menu-content.js';
 
+import './fulfill-request.html';
+import './fulfill-request.js';
