@@ -23,13 +23,13 @@ Template.Browse_Menu_Aloha.helpers({
     const tab = Template.instance().currentTab.get();
 
     const data = {
-      'Sunday': instance.haleAlohaMenu.get().Sunday,
-      'Monday': instance.haleAlohaMenu.get().Monday,
-      'Tuesday': instance.haleAlohaMenu.get().Tuesday,
-      'Wednesday': instance.haleAlohaMenu.get().Wednesday,
-      'Thursday': instance.haleAlohaMenu.get().Thursday,
-      'Friday': instance.haleAlohaMenu.get().Friday,
-      'Saturday': instance.haleAlohaMenu.get().Saturday,
+      Sunday: instance.haleAlohaMenu.get().Sunday,
+      Monday: instance.haleAlohaMenu.get().Monday,
+      Tuesday: instance.haleAlohaMenu.get().Tuesday,
+      Wednesday: instance.haleAlohaMenu.get().Wednesday,
+      Thursday: instance.haleAlohaMenu.get().Thursday,
+      Friday: instance.haleAlohaMenu.get().Friday,
+      Saturday: instance.haleAlohaMenu.get().Saturday,
     };
 
     return { contentType: tab, items: data[tab] };
@@ -37,13 +37,13 @@ Template.Browse_Menu_Aloha.helpers({
 });
 
 Template.Browse_Menu_Aloha.events({
-  'click .item a'(event, template) {
+  'click .item a'(event, instance) {
     const currentTab = $(event.target).closest('a');
 
     currentTab.addClass('active');
     $('.item a').not(currentTab).removeClass('active');
 
-    template.currentTab.set(currentTab.data('template'));
+    instance.currentTab.set(currentTab.data('template'));
   },
 });
 

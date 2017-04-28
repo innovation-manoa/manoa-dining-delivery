@@ -3,7 +3,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Requests, RequestsSchema } from '../../api/requests/requests.js';
-import { Profiles, ProfilesSchema } from '../../api/profiles/profiles.js';
+import { Profiles } from '../../api/profiles/profiles.js';
 import { Meteor } from 'meteor/meteor';
 const displayErrorMessages = 'displayErrorMessages';
 
@@ -67,17 +67,14 @@ Template.Add_Request_Page.events({
     const fulfilled = false;
 
     const newRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
-    console.log(newRequestData);
 
     instance.context.resetValidation();
     RequestsSchema.clean(newRequestData);
     if (instance.context.isValid()) {
-      console.log('valid');
       Requests.insert(newRequestData);
       instance.messageFlags.set(displayErrorMessages, false);
       FlowRouter.go('View_All_Page');
     } else {
-      console.log('invalid');
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
