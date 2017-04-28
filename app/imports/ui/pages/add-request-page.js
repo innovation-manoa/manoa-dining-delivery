@@ -3,7 +3,8 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { _ } from 'meteor/underscore';
 import { Requests, RequestsSchema } from '../../api/requests/requests.js';
-
+import { Profiles, ProfilesSchema } from '../../api/profiles/profiles.js';
+import { Meteor } from 'meteor/meteor';
 const displayErrorMessages = 'displayErrorMessages';
 
 const dormsList = [
@@ -41,6 +42,13 @@ Template.Add_Request_Page.helpers({
   /**
    * Returns the list of dorms as an object. Used for displaying the list of dorms on the form page.
    */
+  profileField(fieldName) {
+    const profileData = Profiles.findOne({ username: Meteor.user().profile.name });
+    return profileData && profileData[fieldName];
+  },
+  isValidUser() {
+    return Meteor.user().profile.name === FlowRouter.getParam('username');
+  },
   dorms() {
     return _.map(dormsList, (dorm) => ({ label: dorm }));
   },
