@@ -1,13 +1,8 @@
 import { Template } from 'meteor/templating';
-import { ReactiveDict } from 'meteor/reactive-dict';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Requests, RequestsSchema } from '../../api/requests/requests.js';
 
-const displayErrorMessages = 'displayErrorMessages';
-
 Template.Fulfill_Request_Page.onCreated(function onCreated() {
-  this.messageFlags = new ReactiveDict();
-  this.messageFlags.set(displayErrorMessages, false);
   this.context = RequestsSchema.namedContext('Fulfill_Request_Page');
 });
 
@@ -40,8 +35,6 @@ Template.Fulfill_Request_Page.events({
     if (instance.context.isValid()) {
       Requests.update(requestData._id, { $set: updatedRequestData });
       FlowRouter.go('View_All_Page');
-    } else {
-      instance.messageFlags.set(displayErrorMessages, true);
     }
   },
   'submit .cancel-request'(event) {
