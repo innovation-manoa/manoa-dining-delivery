@@ -1,4 +1,7 @@
 <template name="Fulfill_Request_Page">
+  {{ #if Template.subscriptionsReady }}
+    {{ removeRequest }}
+  {{ /if }}
   <div class="ui centered container" style="padding: 2% 0% 4% 0%;">
     <table class="ui celled table">
       <thead>
