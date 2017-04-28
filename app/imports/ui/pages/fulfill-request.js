@@ -20,17 +20,19 @@ Template.Fulfill_Request_Page.helpers({
    */
   removeRequest() {
     const requestData = Requests.findOne({ _id: FlowRouter.getParam('_id') });
-    const first = requestData.first;
-    const last = requestData.last;
-    const dorm = requestData.dorm;
-    const room = requestData.room;
-    const phone = requestData.phone;
-    const requestedFoods = requestData.foodsRequested;
-    const fulfilled = true;
+    if (requestData) {
+      const first = requestData.first;
+      const last = requestData.last;
+      const dorm = requestData.dorm;
+      const room = requestData.room;
+      const phone = requestData.phone;
+      const requestedFoods = requestData.foodsRequested;
+      const fulfilled = true;
 
-    const updatedRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
-    Requests.update(requestData._id, { $set: updatedRequestData });
-  }
+      const updatedRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
+      Requests.update(requestData._id, { $set: updatedRequestData });
+    }
+  },
 });
 
 Template.Fulfill_Request_Page.events({
