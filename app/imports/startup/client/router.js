@@ -22,10 +22,10 @@ FlowRouter.route('/add', {
   },
 });
 
-FlowRouter.route('/edit-profile/', {
-  name: 'Edit_Profile_Page',
+FlowRouter.route('/profile/:username/', {
+  name: 'Profile_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Edit_Profile_Page' });
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
@@ -70,6 +70,13 @@ FlowRouter.route('/about', {
   name: 'About_Us_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'About_Us_Page' });
+  },
+});
+
+FlowRouter.route('/fulfill-request/:_id', {
+  name: 'Fulfill_Request_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Fulfill_Request_Page' });
   },
 });
 
