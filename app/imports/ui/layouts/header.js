@@ -2,12 +2,13 @@ import { Template } from 'meteor/templating';
 import swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import './header.html';
+import { Meteor } from 'meteor/meteor';
+
 // The Header menu does not use dropdown menus, but most menus do.
 // Here's how to do the required initialization for Semantic UI dropdown menus.
 Template.Header.onRendered(function enableDropDown() {
   this.$('.dropdown').dropdown();
 });
-
 
 Template.Header.events({
   'click #edit_profile'() {
@@ -43,5 +44,14 @@ Template.Header.events({
       'success'
       );
     }).catch(swal.noop);
+  },
+});
+
+Template.Header.helpers({
+  /**
+   * @returns {String} Returns the user who's logged in
+   */
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : '';
   },
 });

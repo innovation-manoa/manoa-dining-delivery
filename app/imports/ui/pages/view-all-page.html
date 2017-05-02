@@ -11,97 +11,44 @@
     </div>
 
     {{#if currentUser}}
-    <!--Could add a field if in a dorm, then choose floor just cuz-->
-    <!--probably shouldnt show phone number till they accept request-->
     <div id="white-space" class="ui centered container">
       <table style="margin-top: 2%" class="ui celled table">
         <thead>
         <tr>
           <th>First Name</th>
-          <th>Last Last</th>
+          <th>Last Name</th>
+          <th>Dorm</th>
+          <th>Room Number</th>
           <th>Phone Number</th>
-          <th>Current Location / Dormitory</th>
+          <th>Foods Requested</th>
           <th>Fulfill Request</th>
         </tr>
         </thead>
         <tbody>
+        <!-- Fill table with the list of unfulfilled requests -->
+        {{ #each request in requestsList }}
+        {{ #unless request.fulfilled}}
         <tr>
-          <td>Brendt</td>
-          <td>McFeeley</td>
-          <td>8082184913</td>
-          <td>Frear Hall</td>
+          <td>{{request.first}}</td>
+          <td>{{request.last}}</td>
+          <td>{{request.dorm}}</td>
+          <td>{{request.room}}</td>
+          <td>{{request.phone}}</td>
+          <td>{{request.requestedFoods}}</td>
           <td>
-            <div class="ui animated button" tabindex="0">
-              <div class="visible content">Fulfill</div>
-              <div class="hidden content">
-                <i class="right arrow icon"></i>
-              </div>
-            </div>
+            <form>
+              <button class="ui animated button" formaction="{{ pathFor 'Fulfill_Request_Page' _id=request._id }}">
+                <div class="visible content">Fulfill</div>
+                <div class="hidden content">
+                  <i class="right arrow icon"></i>
+                </div>
+              </button>
+            </form>
           </td>
         </tr>
-        <tr>
-          <td>Terry</td>
-          <td>Palomares</td>
-          <td>8082395032</td>
-          <td>Hale Kahawai</td>
-          <td>
-            <div class="ui animated button" tabindex="0">
-              <div class="visible content">Fulfill</div>
-              <div class="hidden content">
-                <i class="right arrow icon"></i>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>Raven</td>
-          <td>Robles</td>
-          <td>356823943</td>
-          <td>Hale Wainani</td>
-          <td>
-            <div class="ui animated button" tabindex="0">
-              <div class="visible content">Fulfill</div>
-              <div class="hidden content">
-                <i class="right arrow icon"></i>
-              </div>
-            </div>
-          </td>
-        </tr>
+        {{ /unless }}
+        {{ /each }}
         </tbody>
-      <thead>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Dorm</th>
-        <th>Room Number</th>
-        <th>Phone Number</th>
-        <th>Foods Requested</th>
-        <th></th>
-      </tr>
-      </thead>
-      <tbody>
-      <!-- Fill table with the list of requests -->
-      {{ #each request in requestsList }}
-      <tr>
-        <td>{{request.first}}</td>
-        <td>{{request.last}}</td>
-        <td>{{request.dorm}}</td>
-        <td>{{request.room}}</td>
-        <td>{{request.phone}}</td>
-        <td>{{request.requestedFoods}}</td>
-        <td>
-          {{#if currentUser}}
-          <div class="ui animated button" tabindex="0">
-            <div class="visible content">Fulfill</div>
-            <div class="hidden content">
-              <i class="right arrow icon"></i>
-            </div>
-          </div>
-          {{/if}}
-        </td>
-      </tr>
-      {{ /each }}
-      </tbody>
       </table>
     </div>
     {{/if}}

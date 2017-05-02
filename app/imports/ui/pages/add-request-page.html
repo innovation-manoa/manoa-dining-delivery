@@ -2,7 +2,6 @@
   <div style="min-height: 35vw" class="ui centered container" id="main-wrapper">
     {{#if currentUser}}
     <h1 style="margin-top: 2.5%; margin-bottom: -1%">Request A Delivery</h1>
-    <form class="ui form" style="padding: 0px 0px 25px 0px;">
       <div class="ui centered container">
         <form class="ui request-form form {{ errorClass }}" style="padding: 25px 0px 25px 0px;">
           <div class="two fields">
@@ -22,7 +21,6 @@
           <button class="ui primary button" type="submit">Submit Request</button>
         </form>
       </div>
-    </form>
     {{else}}
     <h1 style="margin-top: 8%;">Please login in order to create a delivery request!</h1>
     {{/if}}

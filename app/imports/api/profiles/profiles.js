@@ -9,8 +9,8 @@ export const Profiles = new Mongo.Collection('Profiles');
  * Create the schema for Profiles
  */
 export const ProfilesSchema = new SimpleSchema({
-  email: {
-    label: 'email',
+  username: {
+    label: 'username',
     type: String,
     optional: false,
     max: 20,
@@ -18,31 +18,31 @@ export const ProfilesSchema = new SimpleSchema({
   first: {
     label: 'first',
     type: String,
-    optional: false,
-    max: 20,
+    optional: true,
+    max: 50,
   },
   last: {
     label: 'last',
     type: String,
-    optional: false,
-    max: 20,
+    optional: true,
+    max: 50,
   },
   dorm: {
     label: 'dorm',
     type: String,
-    optional: false,
+    optional: true,
     max: 50,
   },
   room: {
     label: 'room',
     type: String,
-    optional: false,
+    optional: true,
     max: 10,
   },
   phone: {
     label: 'phone',
     type: String,
-    optional: false,
+    optional: true,
     regEx: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
   },
 });

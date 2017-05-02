@@ -10,8 +10,8 @@ import './home-page.js';
 import './list-stuff-page.html';
 import './list-stuff-page.js';
 
-import './edit-profile-page.html';
-import './edit-profile-page.js';
+import './profile-page.html';
+import './profile-page.js';
 
 import './view-all-page.html';
 import './view-all-page.js';
@@ -31,3 +31,5 @@ import './about-us-page.js';
 import './menu-content.html';
 import './menu-content.js';
 
+import './fulfill-request.html';
+import './fulfill-request.js';
