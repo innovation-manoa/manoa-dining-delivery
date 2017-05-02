@@ -1,19 +1,19 @@
 <template name="Add_Request_Page">
-  <!-- place pictures niggaz-->
   <div style="min-height: 35vw" class="ui centered container" id="main-wrapper">
     {{#if currentUser}}
+    {{ #if Template.subscriptionsReady }}
     <h1 style="margin-top: 2.5%; margin-bottom: -1%">Request A Delivery</h1>
       <div class="ui centered container">
         <form class="ui request-form form {{ errorClass }}" style="padding: 25px 0px 25px 0px;">
           <div class="two fields">
-            {{> Text_Form_Control name="first" label="First Name" errorMessage=(fieldError "first") required=true }}
-            {{> Text_Form_Control name="last" label="Last Name" errorMessage=(fieldError "last") required=true }}
+            {{> Text_Form_Control name="first" label="First Name" value=(profileField 'first') errorMessage=(fieldError "first") required=true }}
+            {{> Text_Form_Control name="last" label="Last Name" value=(profileField 'last') errorMessage=(fieldError "last") required=true }}
           </div>
           <div class="three fields">
             {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorms")
             required=true }}
-            {{> Text_Form_Control name="room" label="Room Number" errorMessage=(fieldError "room") required=true }}
-            {{> Text_Form_Control name="phone" label="Phone Number" errorMessage=(fieldError "phone") required=true }}
+            {{> Text_Form_Control name="room" label="Room Number" value=(profileField 'room') errorMessage=(fieldError "room") required=true }}
+            {{> Text_Form_Control name="phone" label="Phone Number" value=(profileField 'phone') errorMessage=(fieldError "phone") required=true }}
           </div>
           <div class="field">
             {{> Select_Form_Control name="requestedFoods" label="Requested Foods" errorMessage=(fieldError
@@ -24,6 +24,7 @@
       </div>
     {{else}}
     <h1 style="margin-top: 8%;">Please login in order to create a delivery request!</h1>
+    {{/if}}
     {{/if}}
   </div>
 </template>
