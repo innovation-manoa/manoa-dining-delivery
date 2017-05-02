@@ -12,7 +12,7 @@ Template.Header.onRendered(function enableDropDown() {
 });
 
 Template.Header.events({
-  'click #edit_profile'() {
+  'click #edit_profile'(event, instance) {
     const profileData = Profiles.findOne({ username: Meteor.user().profile.name });
     swal({
       title: 'Profile',
@@ -39,6 +39,24 @@ Template.Header.events({
       },
     }).then(function (result) {
       console.log(result[1]);
+      const username = Meteor.user().profile.name;
+      const first = result[0];
+      const last = result[1];
+      const dorm = result[3];
+      const room = result[3];
+      const phone = result[4];
+
+      const updatedProfileData = { username, first, last, dorm, room, phone };
+      ProfilesSchema.clean(updatedProfileData);
+
+      if (!Profiles.findOne({ username: Meteor.user().profile.name })) {
+        Profiles.insert(updatedProfileData);
+      } else {
+        // Profile exists already, so update it
+        const docId = Profiles.findOne({ username: Meteor.user().profile.name })._id;
+        Profiles.update(docId, { $set: updatedProfileData });
+      }
+      
       swal(
       'Success!',
       '<p> Your profile was updated successfully </p>',
