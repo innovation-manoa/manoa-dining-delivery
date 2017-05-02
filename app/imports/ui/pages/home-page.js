@@ -4,7 +4,7 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 import './home-page.html';
 
 Template.Home_Page.events({
-  'click #requestButton': function () {
+  'click #requestButton'() {
      /*
      * AJAX request time for the food menu, to see what is available at that time
      * make sure input is required for information
@@ -20,7 +20,7 @@ Template.Home_Page.events({
         '<input id="swal-input3" class="swal2-input" placeholder="Dormitory" required>' +
         '<input id="swal-input4" class="swal2-input" placeholder="Room Number" required>' +
         '<input id="swal-input5" class="swal2-input" placeholder="Phone Number" required>',
-        preConfirm: function () {
+        preConfirm() {
           return new Promise(function (resolve) {
             resolve([
               $('#swal-input1').val(),
@@ -31,7 +31,7 @@ Template.Home_Page.events({
             ]);
           });
         },
-        onOpen: function () {
+        onOpen() {
           $('#swal-input1').focus();
         },
       },
@@ -45,7 +45,7 @@ Template.Home_Page.events({
         },
         inputPlaceholder: 'Select cafeteria',
         showCancelButton: true,
-        inputValidator: function (value) {
+        inputValidator(value) {
           return new Promise(function (resolve, reject) {
             if (value) {
               resolve();

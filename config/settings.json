@@ -1,0 +1,20 @@
+{
+  "galaxy.meteor.com": {
+     "env": {
+       "MONGO_URL": "mongodb://admin:mddadmin@ds159670.mlab.com:59670/manoa-dining-delivery"
+     }
+   },
+   "cas": {
+    "baseUrl": "https://cas-test.its.hawaii.edu/cas/",
+    "autoClose": true
+  },
+  "public": {
+    "cas": {
+      "loginUrl": "https://cas-test.its.hawaii.edu/cas/login",
+      "serviceParam": "service",
+      "popupWidth": 810,
+      "popupHeight": 610
+    }
+  }
+}
+
