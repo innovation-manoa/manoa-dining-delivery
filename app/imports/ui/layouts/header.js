@@ -12,7 +12,7 @@ Template.Header.onRendered(function enableDropDown() {
 });
 
 Template.Header.events({
-  'click #edit_profile'(event, instance) {
+  'click #edit_profile'(event) {
     const profileData = Profiles.findOne({ username: Meteor.user().profile.name });
     swal({
       title: 'Profile',
@@ -23,6 +23,8 @@ Template.Header.events({
         '<input id="swal-input3" class="swal2-input" value="' + profileData.room + '"placeholder="Dormitory" required>' +
         '<input id="swal-input4" class="swal2-input" value="' + profileData.room + '"placeholder="Room Number" required>' +
         '<input id="swal-input5" class="swal2-input" value="' + profileData.phone + '"placeholder="Phone Number" required>',
+      confirmButtonColor: '#329900',
+      confirmButtonText: 'Update',
       preConfirm() {
         return new Promise(function (resolve) {
           resolve([
@@ -38,7 +40,6 @@ Template.Header.events({
         $('#swal-input1').focus();
       },
     }).then(function (result) {
-      console.log(result[1]);
       const username = Meteor.user().profile.name;
       const first = result[0];
       const last = result[1];
@@ -56,7 +57,7 @@ Template.Header.events({
         const docId = Profiles.findOne({ username: Meteor.user().profile.name })._id;
         Profiles.update(docId, { $set: updatedProfileData });
       }
-      
+
       swal(
       'Success!',
       '<p> Your profile was updated successfully </p>',
