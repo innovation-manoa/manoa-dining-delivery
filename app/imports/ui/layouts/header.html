@@ -1,5 +1,5 @@
 <template name="Header">
-  <div style="font-family: 'Open Sans', sans-serif;" class="ui grid header">
+  <div class="ui grid header">
     <div class="six wide column">
       <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
     </div>
@@ -21,15 +21,16 @@
     <div class="two wide column header">
       <div class="right aligned item">{{> Cas_Login}}</div>
       {{#if currentUser}}
-      <a style="color: black;" class="{{ isActiveRoute 'Profile_Page'}} item"
-         href="{{ pathFor 'Profile_Page' username=user }}">Profile</a>
+      <a href style="color: black;" id="edit_profile"> Edit Profile </a>
       {{/if}}
     </div>
   </div>
 
   <script>
-    $('.ui.dropdown')
-        .dropdown();
+    $('.dropdown').dropdown();
+    $('select.dropdown')
+        .dropdown()
+    ;
   </script>
 
 </template>
