@@ -1,11 +1,13 @@
 <template name="Header">
+
+  <!-- Old header in case
   <div class="ui grid header">
     <div class="six wide column">
       <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
     </div>
     {{ #if currentUser }}
     <div class="two wide column header">
-      <a style="color: black;" class="item" href="{{ pathFor 'View_All_Page' }}">View Requests</a>
+      <a style="color: black;" class="header item" href="{{ pathFor 'View_All_Page' }}">View Requests</a>
     </div>
     {{ /if }}
     <div style="margin-left: 2.1%" class="two wide column header">
@@ -13,17 +15,44 @@
         Menus
         <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
-          <a class="item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
+          <a class="header item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
+          <a class="header item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
         </div>
       </div>
     </div>
     <div class="two wide column header">
       <div class="right aligned item">{{> Cas_Login}}</div>
       {{#if currentUser}}
-      <a style="color: black;" class="{{ isActiveRoute 'Profile_Page'}} item"
+      <a style="color: darkgray;" class="{{ isActiveRoute 'Profile_Page'}} item"
          href="{{ pathFor 'Profile_Page' username=user }}">Profile</a>
       {{/if}}
+    </div>
+  </div>
+  -->
+
+  <!--To Finish-->
+
+  <div class="ui centered container">
+    <div class="ui two column grid">
+      <div class="column">
+        <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
+      </div>
+
+      <div class="column">
+        <div style="margin-left: 10%" class="ui segment">
+          <div class="ui secondary pointing menu">
+            <a class="header item">
+              View Requests
+            </a>
+            <a class="header item">
+              Menu
+            </a>
+            <a class="header item">
+              Friends
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -32,4 +61,16 @@
         .dropdown();
   </script>
 
+  <!--
+  <script>
+    $(document).ready(function(){
+      $('.right.menu.open').on("click",function(e){
+        e.preventDefault();
+        $('.ui.vertical.menu').toggle();
+      });
+
+      $('.ui.dropdown').dropdown();
+    });
+  </script>
+  !-->
 </template>

@@ -5,6 +5,7 @@ html {
 body {
   height: 100%;
   overflow: auto;
+  body: black;
 }
 
 .ui.grid.header {
@@ -12,8 +13,14 @@ body {
   margin-bottom: 0.5%;
   height: auto;
   width: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arvo', sans-serif;
   font-size: 16px;
+  color: darkgray;
+}
+
+.header.item {
+  color: grey;
+  margin-left: 10%;
 }
 
 .two.wide.column.header {
@@ -35,32 +42,27 @@ body {
 }
 
 #hmpgText {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.6vw;
+  font-family: 'Arvo', sans-serif;
+  font-size: 2.4vw;
 }
 
 #hmpgTextSmall {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arvo', sans-serif;
   font-size: 1.04vw;
 }
 
 .hmpgText.top {
   margin-top: 21.5%;
   margin-left: 41.5%;
+  color: #329900;
 }
 
 .hmpgText.mid {
   margin-top: -6%;
   margin-left: 41.5%;
-  color: #329900;
+  color: black;
   font-size: 1.65vw;
   text-align: center;
-}
-
-.hmpgText.bot {
-  color: #848484;
-  margin-left: 41.5%;
-  margin-top: -4.2%;
 }
 
 .ui.centered.container.TCG {
@@ -70,7 +72,7 @@ body {
 
 .large.ui.button {
   margin-left: 62.5%;
-  margin-top: -3%;
+  margin-top: -5%;
 }
 
 .hmpg.img {
@@ -78,7 +80,8 @@ body {
 }
 
 .ui.centered.container.TCG {
-  margin-top: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .ui.container.hmpg {
@@ -90,13 +93,13 @@ body {
 }
 
 #triColHead {
-  font-size: 45px;
+  font-size: 1.9vw;
   margin-bottom: -2%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arvo', sans-serif;
 }
 
 #triColBody {
-  font-size: 23px;
+  font-size: .9vw;
 }
 
 .ui.centered.container.foot {
@@ -106,7 +109,7 @@ body {
 h1 {
   text-align: center;
   font-size: 36px;
-  font-family: 'Coda';
+  font-family: 'Arvo', sans-serif;
 }
 
 .view.all.p1 {
@@ -117,12 +120,12 @@ h1 {
 
 th {
   font-size: 1.05vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arvo', sans-serif;
 }
 
 td {
   font-size: 1vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arvo', sans-serif;
 }
 
 .footer {
@@ -145,4 +148,9 @@ td {
   min-height: 100%;
   height: auto;
   flex-direction: column;
+}
+
+.ui.segment, ui.secondary.pointing.menu {
+  border: none;
+  box-shadow: none;
 }
