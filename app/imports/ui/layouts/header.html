@@ -37,16 +37,19 @@
       <div class="column">
         <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
       </div>
-
       <div class="column">
         <div style="margin-left: 10%" class="ui segment">
           <div class="ui secondary pointing menu">
-            <a class="header item">
+            <a href="{{ pathFor 'View_All_Page' }}" class="header item">
               View Requests
             </a>
-            <a class="header item">
+            <div class="ui dropdown header item">
               Weekly Menu
-            </a>
+              <div class="menu">
+                <a class="header item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
+                <a class="header item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
+              </div>
+            </div>
               {{> Cas_Login}}
           </div>
         </div>
