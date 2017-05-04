@@ -1,19 +1,47 @@
 <template name="Cas_Login">
-  <div class="ui simple dropdown item">
+  <div class="ui dropdown header item">
     {{ #if currentUser }}
       <!-- Display name of the account when logged in -->
-      <div class="text">{{ user }}</div>
+      {{ user }}
     {{ else }}
-      <div class="text">Account</div>
+      Account
     {{ /if }}
     <i class="dropdown icon"></i>
     <div class="menu">
       {{#if currentUser}}
-      <div class="item cas-logout">Logout</div>
+      <a class="item" id="edit_profile"> Edit Profile </a>
+      <a class="item cas-logout">Logout</a>
       {{else}}
-      <div class="item cas-login">Login</div>
+      <a class="item cas-login">Login</a>
       {{/if}}
     </div>
   </div>
 
+  <!--{{ #if currentUser }}-->
+  <!--<a style="font-size: medium;" class="ui header dropdown item">-->
+    <!--{{ user }}-->
+    <!--<div class="menu">-->
+      <!--<div class="header item cas-logout"> Logout </div>-->
+      <!--<div class="header item" id="edit_profile"> Profile </div>-->
+    <!--</div>-->
+  <!--</a>-->
+  <!--{{ else }}-->
+  <!--<a class="header item cas-login" >-->
+    <!--Login-->
+  <!--</a>-->
+  <!--{{/if}}-->
+
+  <!--{{ #if currentUser }}-->
+    <!--<div class="ui simple dropdown header item">-->
+      <!--{{ user }}-->
+      <!--<div class="menu">-->
+        <!--<a class="header item cas-logout"> Logout </a>-->
+        <!--<a class="header item" id="edit_profile"> Profile </a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--{{ else }}-->
+    <!--<a class="header item cas-login">-->
+      <!--Login-->
+    <!--</a>-->
+  <!--{{/if}}-->
 </template>

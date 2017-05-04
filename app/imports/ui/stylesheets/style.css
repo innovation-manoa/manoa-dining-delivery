@@ -21,8 +21,15 @@ body {
 .header.item {
   color: grey;
   margin-left: 10%;
+  font-size: medium;
 }
 
+.ui.dropdown.header.item {
+  color: grey;
+  margin-left: 10%;
+  font-size: medium;
+  margin-bottom: 0px;
+}
 .two.wide.column.header {
   padding-top: 3%
 }
