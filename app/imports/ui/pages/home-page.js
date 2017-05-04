@@ -5,7 +5,7 @@ import './home-page.html';
 
 Template.Home_Page.events({
   'click #requestButton'() {
-     /*
+    /*
      * AJAX request time for the food menu, to see what is available at that time
      * make sure input is required for information
      * fix json stringify
@@ -15,11 +15,11 @@ Template.Home_Page.events({
       {
         title: 'Information',
         html: '<p>Please Enter Your Information</p> ' +
-        '<input id="swal-input1" class="swal2-input" placeholder="First Name">' +
-        '<input id="swal-input2" class="swal2-input" placeholder="Last Name" required>' +
-        '<input id="swal-input3" class="swal2-input" placeholder="Dormitory" required>' +
-        '<input id="swal-input4" class="swal2-input" placeholder="Room Number" required>' +
-        '<input id="swal-input5" class="swal2-input" placeholder="Phone Number" required>',
+            '<input id="swal-input1" class="swal2-input" placeholder="First Name">' +
+            '<input id="swal-input2" class="swal2-input" placeholder="Last Name" required>' +
+            '<input id="swal-input3" class="swal2-input" placeholder="Dormitory" required>' +
+            '<input id="swal-input4" class="swal2-input" placeholder="Room Number" required>' +
+            '<input id="swal-input5" class="swal2-input" placeholder="Phone Number" required>',
         preConfirm() {
           return new Promise(function (resolve) {
             resolve([
@@ -57,9 +57,18 @@ Template.Home_Page.events({
       },
       {
         title: 'Food',
-        html: 'Please select the food you want to request',
+        html: '<div class="ui form"</div>' +
+            '<div class="field">' +
+            '<select multiple="" name="skills" class="ui dropdown">' +
+            '<option value=""> Skills </option>' +
+            '<option value=""> xd </option>' +
+            '<option value=""> lmao </option>' +
+            ' </select> ' +
+        '</div>' +
+        '</div>',
       },
-    ];
+    ]
+    ;
 
     swal.setDefaults({
       confirmButtonText: 'Next &rarr;',
@@ -73,19 +82,21 @@ Template.Home_Page.events({
       swal({
         title: 'Confirm Information',
         html: 'Your answers: <pre>' +
-        JSON.stringify(result) +
-        '</pre>',
+            JSON.stringify(result) +
+            '</pre>',
         confirmButtonText: 'Create Request',
         showCancelButton: false,
         progressSteps: ['1', '2', '3', '4'],
       }).then(function () {
         swal(
-            'Request Received!',
-            '<p>Your order has been received!</p>' + '<p>View it in the view requests tab!</p>',
-            'success'
-        );
+                'Request Received!',
+                '<p>Your order has been received!</p>' + '<p>View it in the view requests tab!</p>',
+                'success'
+            );
       });
-    }, function () {
+      console.log(result);
+    }
+        , function () {
       swal.resetDefaults();
     });
   },

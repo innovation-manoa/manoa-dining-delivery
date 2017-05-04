@@ -1,4 +1,5 @@
 import { Template } from 'meteor/templating';
+
 import swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import './header.html';
@@ -71,6 +72,15 @@ Template.Header.events({
       'success'
       );
     }).catch(swal.noop);
+  },
+});
+
+Template.Header.helpers({
+  /**
+   * @returns {String} Returns the user who's logged in
+   */
+  user: function user() {
+    return Meteor.user() ? Meteor.user().profile.name : '';
   },
 });
 

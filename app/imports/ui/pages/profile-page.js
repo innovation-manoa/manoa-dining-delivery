@@ -64,6 +64,7 @@ Template.Profile_Page.helpers({
    */
   isValidUser() {
     return Meteor.user().profile.name === FlowRouter.getParam('username');
+
   },
 });
 
@@ -99,4 +100,5 @@ Template.Profile_Page.events({
       instance.messageFlags.set(displayErrorMessages, true);
     }
   },
+
 });
