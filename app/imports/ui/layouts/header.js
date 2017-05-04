@@ -9,19 +9,26 @@ import { Profiles, ProfilesSchema } from '../../api/profiles/profiles.js';
 // Here's how to do the required initialization for Semantic UI dropdown menus.
 Template.Header.onRendered(function enableDropDown() {
   this.$('.dropdown').dropdown();
+  this.$('select.dropdown')
+      .dropdown()
+  ;
 });
 
 Template.Header.events({
   'click #edit_profile'(event) {
     const profileData = Profiles.findOne({ username: Meteor.user().profile.name });
     swal({
-      title: 'Profile',
+      title: 'Edit Your Profile ',
       html:
-      '<p>Please Enter Your Information</p> ' +
+      '<label for="swal-input1"> First Name </label>' +
         '<input id="swal-input1" class="swal2-input" value="' + profileData.first + '"placeholder="First Name">' +
-        '<input id="swal-input2" class="swal2-input" value="' + profileData.last + '"placeholder="Last Name" required>' +
-        '<input id="swal-input3" class="swal2-input" value="' + profileData.room + '"placeholder="Dormitory" required>' +
+      '<label for="swal-input2"> Last Name </label>' +
+      '<input id="swal-input2" class="swal2-input" value="' + profileData.last + '"placeholder="Last Name">' +
+      '<label for="swal-input3"> Dorm </label>' +
+          '<input id="swal-input3" class="swal2-input" value="' + profileData.dorm + '"placeholder="Dorm">'+
+      '<label for="swal-input4"> Room Number </label>' +
         '<input id="swal-input4" class="swal2-input" value="' + profileData.room + '"placeholder="Room Number" required>' +
+      '<label for="swal-input5"> Phone Number </label>' +
         '<input id="swal-input5" class="swal2-input" value="' + profileData.phone + '"placeholder="Phone Number" required>',
       confirmButtonColor: '#329900',
       confirmButtonText: 'Update',
@@ -43,7 +50,7 @@ Template.Header.events({
       const username = Meteor.user().profile.name;
       const first = result[0];
       const last = result[1];
-      const dorm = result[3];
+      const dorm = result[2];
       const room = result[3];
       const phone = result[4];
 
