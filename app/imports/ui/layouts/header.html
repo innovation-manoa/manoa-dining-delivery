@@ -23,8 +23,8 @@
     <div class="two wide column header">
       <div class="right aligned item">{{> Cas_Login}}</div>
       {{#if currentUser}}
-      <a style="color: darkgray;" class="{{ isActiveRoute 'Profile_Page'}} item"
-         href="{{ pathFor 'Profile_Page' username=user }}">Profile</a>
+
+      <a href style="color: darkgrey;" id="edit_profile"> Edit Profile </a>
       {{/if}}
     </div>
   </div>
@@ -57,8 +57,10 @@
   </div>
 
   <script>
-    $('.ui.dropdown')
-        .dropdown();
+    $('.dropdown').dropdown();
+    $('select.dropdown')
+        .dropdown()
+    ;
   </script>
 
   <!--
