@@ -3,10 +3,26 @@
     <!--if ur logged in , there is a button to accept it-->
     <div class="ui centered container">
       {{#if currentUser}}
-      <h1 style="margin-top: 2.5%">All Food Delivery Requests</h1>
+      <h1 style="margin-top: 2.5%; color: #329900;">All Food Delivery Requests</h1>
       {{else}}
-      <h1 style="margin-top: 2.5%;">All Food Delivery Requests</h1>
-      <p class="view all p1">Please login in order to fulfill requests!</p>
+      <h1 style="margin-top: 2.5%; color: #329900;"> Fulfilling Delivery Requests </h1>
+      <div class="ui two column stackable grid container">
+        <div class="left aligned column">
+          <p class="view all p1"> Manoa Dining Delivery makes it easy for people who dorm to trade their meals for cold hard cash! All you have to do is log in with your University of Hawaii username and password to get started. </p>
+          <p class="view all p2"> Log in now to view requests that need to be fulfilled! </p>
+        </div>
+
+        <div class="right aligned column">
+          <img
+              src="https://scontent.cdninstagram.com/t51.2885-15/e35/12141917_1081070555237149_1003315906_n.jpg"
+              style="height: 450px; width: 450px">
+        </div>
+
+      </div>
+
+
+
+
       {{/if}}
     </div>
 
