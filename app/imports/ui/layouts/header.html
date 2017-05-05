@@ -37,30 +37,33 @@
       <div class="column">
         <a href="{{pathFor 'Home_Page'}}"><img src="http://placehold.it/350x60"></a>
       </div>
-
-      <div class="column">
+      <div class="right floated left aligned seven wide column">
         <div style="margin-left: 10%" class="ui segment">
           <div class="ui secondary pointing menu">
-            <a class="header item">
-              View Requests
-            </a>
-            <a class="header item">
-              Menu
-            </a>
-            <a class="header item">
-              Friends
-            </a>
+            <div class="ui dropdown header item">
+              Requests
+              <div class="menu">
+                <a class="header item" href="{{ pathFor 'View_All_Page' }}"> Fulfill </a>
+                <a class="header item" href="{{ pathFor 'Add_Request_Page' }}"> Create </a>
+              </div>
+            </div>
+            <div class="ui dropdown header item">
+              Weekly Menu
+              <div class="menu">
+                <a class="header item" href="{{ pathFor 'Browse_Menu_Aloha' }}">Hale Aloha</a>
+                <a class="header item" href="{{ pathFor 'Browse_Menu_Gateway' }}">Gateway</a>
+              </div>
+            </div>
+              {{> Cas_Login}}
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
   <script>
     $('.dropdown').dropdown();
-    $('select.dropdown')
-        .dropdown()
-    ;
   </script>
 
   <!--
