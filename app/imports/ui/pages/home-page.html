@@ -1,19 +1,17 @@
 <template name="Home_Page">
   <div id="main-wrapper">
     <div id="home-page" class="home page">
-      <div class="ui two column grid">
+      <div class="ui two column stackable grid">
         <div class="column hmpg">
-          <p class="hmpgText top" id="hmpgText">
-            <!-- Changed text font later, it's ugly-->
-            Mānoa Dining Delivery
-          </p>
-          <p class="hmpgText mid">
-            On Campus Food Delivery
-          </p>
-          <button class="large ui button" id="requestButton">Start Order</button>
+          <ul class="centered homepageUl">
+            <li class="homepageText top"> Mānoa Dining Delivery </li>
+            <li class="homepageText bottom"> On Campus Food Delivery </li>
+            <li class="homepageText"> <button class="large ui button homepageButton" id="requestButton">Start Order</button> </li>
+          </ul>
+
         </div>
-        <div class="column hmpg">
-          <div style="max-width: 800px" class='owl-carousel'>
+        <div class="column hmpg computer only">
+          <div style="max-width: 800px; margin: 5px 5px 5px 5px" class='centered owl-carousel'>
             <a href="https://www.instagram.com/p/BSjxA3xDvHU/?taken-by=manoadining">
               <img
                   src="https://scontent.cdninstagram.com/t51.2885-15/e35/17663322_1663479690623133_1968853329639374848_n.jpg"
@@ -31,7 +29,7 @@
       </div>
 
       <div class="ui centered container TCG">
-        <div style="height: auto;" class="ui three column grid">
+        <div style="height: auto;" class="ui three column centered stackable grid">
           <div class="column">
             <a><img
                 src="https://scontent.cdninstagram.com/t51.2885-15/e35/17334266_1642703589088156_6755264334269513728_n.jpg"
