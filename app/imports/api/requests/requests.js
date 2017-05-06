@@ -39,6 +39,12 @@ export const RequestsSchema = new SimpleSchema({
     optional: false,
     regEx: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
   },
+  cafeteria: {
+    label: 'cafeteria',
+    type: String,
+    optional: false,
+    max: 50,
+  },
   requestedFoods: {
     label: 'requestedFoods',
     type: [String],

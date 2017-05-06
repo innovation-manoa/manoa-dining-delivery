@@ -159,11 +159,12 @@ Template.Add_Request_Page.events({
     const dorm = event.target.dorm.value;
     const room = event.target.room.value;
     const phone = event.target.phone.value;
+    const cafeteria = event.target.cafe.value;
     const requestedFoods = instance.$('select[name=requestedFoods]').dropdown('get value');
     requestedFoods.pop();
     const fulfilled = false;
 
-    const newRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
+    const newRequestData = { first, last, dorm, room, phone, cafeteria, requestedFoods, fulfilled };
 
     instance.context.resetValidation();
     RequestsSchema.clean(newRequestData);
