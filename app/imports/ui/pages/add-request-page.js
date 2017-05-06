@@ -116,21 +116,26 @@ Template.Add_Request_Page.helpers({
 
     const menuItems = [];
     // Get the menu (breakfast, lunch, dinner) the cafe selected and current time/day
-    if (cafeSelected === 'Gateway Cafe') {
-      if (currentTime >= '07:00:00' && currentTime <= '10:00:00') {
-        _.each(data[currentDay].Breakfast, menuItem => menuItems.push(menuItem[0]));
-      } else if (currentTime >= '11:00:00' && currentTime <= '14:00:00') {
-        _.each(data[currentDay].Lunch, menuItem => menuItems.push(menuItem[0]));
-      } else if (currentTime >= '16:30:00' && currentTime <= '20:00:00') {
-        _.each(data[currentDay].Dinner, menuItem => menuItems.push(menuItem[0]));
-      }
-    } else {
-      if ((currentDay === 'Saturday' || currentDay === 'Sunday') &&
-          currentTime >= '10:00:00' &&
-          currentTime <= '13:30:00') {
-        _.each(data[currentDay].Lunch, menuItem => menuItems.push(menuItem[0]));
-      } else if (currentTime >= '16:30:00' && currentTime <= '20:00:00') {
-        _.each(data[currentDay].Dinner, menuItem => menuItems.push(menuItem[0]));
+    if (data[currentDay]) {
+      if (cafeSelected === 'Gateway Cafe') {
+        if (currentTime >= '07:00:00' &&
+            currentTime <= '10:00:00' &&
+            currentDay !== 'Saturday' &&
+            currentDay !== 'Sunday') {
+          _.each(data[currentDay].Breakfast, menuItem => menuItems.push(menuItem[0]));
+        } else if (currentTime >= '11:00:00' && currentTime <= '14:00:00') {
+          _.each(data[currentDay].Lunch, menuItem => menuItems.push(menuItem[0]));
+        } else if (currentTime >= '16:30:00' && currentTime <= '20:00:00') {
+          _.each(data[currentDay].Dinner, menuItem => menuItems.push(menuItem[0]));
+        }
+      } else {
+        if ((currentDay === 'Saturday' || currentDay === 'Sunday') &&
+            currentTime >= '10:00:00' &&
+            currentTime <= '13:30:00') {
+          _.each(data[currentDay].Lunch, menuItem => menuItems.push(menuItem[0]));
+        } else if (currentTime >= '16:30:00' && currentTime <= '20:00:00') {
+          _.each(data[currentDay].Dinner, menuItem => menuItems.push(menuItem[0]));
+        }
       }
     }
     // No items in menu - cafeteria probably closed
