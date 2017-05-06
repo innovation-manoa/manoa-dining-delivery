@@ -154,7 +154,8 @@ Template.Add_Request_Page.events({
     const dorm = event.target.dorm.value;
     const room = event.target.room.value;
     const phone = event.target.phone.value;
-    const requestedFoods = ['Cheeseburger'];
+    const requestedFoods = instance.$('select[name=requestedFoods]').dropdown('get value');
+    requestedFoods.pop();
     const fulfilled = false;
 
     const newRequestData = { first, last, dorm, room, phone, requestedFoods, fulfilled };
