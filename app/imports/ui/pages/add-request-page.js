@@ -117,11 +117,8 @@ Template.Add_Request_Page.helpers({
     const menuItems = [];
     // Get the menu (breakfast, lunch, dinner) the cafe selected and current time/day
     if (data[currentDay]) {
-      if (cafeSelected === 'Gateway Cafe') {
-        if (currentTime >= '07:00:00' &&
-            currentTime <= '10:00:00' &&
-            currentDay !== 'Saturday' &&
-            currentDay !== 'Sunday') {
+      if (cafeSelected === 'Gateway Cafe' && currentDay !== 'Saturday' && currentDay !== 'Sunday') {
+        if (currentTime >= '07:00:00' && currentTime <= '10:00:00') {
           _.each(data[currentDay].Breakfast, menuItem => menuItems.push(menuItem[0]));
         } else if (currentTime >= '11:00:00' && currentTime <= '14:00:00') {
           _.each(data[currentDay].Lunch, menuItem => menuItems.push(menuItem[0]));
