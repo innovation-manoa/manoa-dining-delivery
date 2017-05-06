@@ -167,7 +167,7 @@ Template.Add_Request_Page.events({
 
     instance.context.resetValidation();
     RequestsSchema.clean(newRequestData);
-    if (instance.context.isValid()) {
+    if (instance.context.isValid() && !requestedFoods.includes('Cafeteria is currently closed.')) {
       Requests.insert(newRequestData);
       instance.messageFlags.set(displayErrorMessages, false);
       FlowRouter.go('View_All_Page');
