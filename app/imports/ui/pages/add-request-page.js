@@ -177,6 +177,8 @@ Template.Add_Request_Page.events({
   },
   'click .radio.checkbox'(event, instance) {
     event.preventDefault();
+    // Clear selection when a different cafeteria is selected
+    instance.$('select[name=requestedFoods]').dropdown('clear');
     instance.cafeSelected.set($('input[name=cafe]:checked').val());
   },
 });
