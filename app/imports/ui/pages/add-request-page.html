@@ -15,10 +15,10 @@
             {{> Text_Form_Control name="room" label="Room Number" value=(profileField 'room') errorMessage=(fieldError "room") required=true }}
             {{> Text_Form_Control name="phone" label="Phone Number" value=(profileField 'phone') errorMessage=(fieldError "phone") required=true }}
           </div>
-          <div class="field">
-            {{> Select_Form_Control name="requestedFoods" label="Requested Foods" errorMessage=(fieldError
+          {{> Radio_Form_Control name="cafe" label="Select a Cafeteria to Order From:" radios=cafeterias required=true }}
+          <!-- Menu displays when the user selects a cafeteria -->
+          {{> Select_Form_Control name="requestedFoods" options=(menu) label="Requested Foods" errorMessage=(fieldError
             "requestedFoods") multiple=true required=true }}
-          </div>
           <button class="ui primary button" type="submit">Submit Request</button>
         </form>
       </div>
