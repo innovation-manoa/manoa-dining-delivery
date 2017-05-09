@@ -64,7 +64,6 @@ Template.Profile_Page.helpers({
    */
   isValidUser() {
     return Meteor.user().profile.name === FlowRouter.getParam('username');
-
   },
 });
 

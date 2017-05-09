@@ -1,6 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
+import { $ } from 'meteor/jquery';
 
 Template.Browse_Menu_Aloha.onCreated(function onCreated() {
   this.currentTab = new ReactiveVar('Sunday');

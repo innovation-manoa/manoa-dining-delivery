@@ -1,6 +1,4 @@
-/**
- * Created by Terry on 4/19/17.
- */
+/* eslint no-undef: 0 */
 
 import { Meteor } from 'meteor/meteor';
 const GatewayJSON = JSON.parse(Assets.getText('scrape/gateway_weekly_menu.json'));
