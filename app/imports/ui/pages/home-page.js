@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import swal from 'sweetalert2';
+import { $ } from 'meteor/jquery';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import './home-page.html';
 
