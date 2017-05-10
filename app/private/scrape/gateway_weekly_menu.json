@@ -6,7 +6,7 @@
                 "160"
             ],
             [
-                "Omelet Bar",
+                "Breakfast for Lunch Omelet Bar",
                 "240"
             ],
             [
@@ -14,20 +14,20 @@
                 "180"
             ],
             [
-                "Texas French Toast",
+                "Banana Pancakes",
+                "210"
+            ],
+            [
+                "Hash Brown Patties",
                 "130"
             ],
             [
-                "Home Fried  Potato",
-                "140"
+                "Grilled Spam",
+                "90"
             ],
             [
-                "Sausage Patties",
-                "100"
-            ],
-            [
-                "Bacon Potato Breakfast Burrito",
-                "660"
+                "English Muffin w/ Egg, Cheese & Sausage",
+                "440"
             ]
         ],
         "Lunch": [
@@ -36,232 +36,138 @@
                 "280"
             ],
             [
-                "Crispy Orange Chicken Stir-Fry",
-                "310"
+                "Ancho Chili BBQ Beef",
+                "230"
             ],
             [
-                "Jasmine Rice",
-                "130"
-            ],
-            [
-                "Steamed Green Beans",
-                "40"
-            ],
-            [
-                "Quesadilla Bar",
-                "420"
-            ],
-            [
-                "Grilled Cheese",
-                "400"
-            ],
-            [
-                "French  Fries",
-                "260"
-            ],
-            [
-                "Pigs In a Blanket",
-                "260"
-            ],
-            [
-                "Cheese Pizza",
-                "290"
-            ],
-            [
-                "Pepperoni Pizza",
-                "310"
-            ],
-            [
-                "Marinated Bean Salad with Cumin",
-                "190"
-            ],
-            [
-                "Chipotle Lime Turkey Biggie Sandwich",
-                "270"
-            ],
-            [
-                "Chicken and Corn Chowder",
+                "Oven Roasted Rosemary Potatoes",
                 "160"
             ],
             [
-                "Vegetarian Minestrone",
-                "70"
+                "Steamed Broccoli",
+                "10"
             ],
             [
-                "Grilled Pita Chips",
-                "220"
+                "Buffalo Chicken Wings",
+                "650"
             ],
             [
-                "Cheese Ravioli Pasta Bowl",
-                "490"
+                "Cheese  Quesadilla",
+                "920"
             ],
             [
-                "Lentil Stew",
+                "French Fried Potatoes",
+                "240"
+            ],
+            [
+                "Create Your Own Pasta w/ Meatballs",
+                "1050"
+            ],
+            [
+                "Create Your Own Pasta w/ Shrimp Alfredo",
+                "630"
+            ],
+            [
+                "Cheesy Garlic Bread",
+                "140"
+            ],
+            [
+                "Garden Pasta Salad",
+                "80"
+            ],
+            [
+                "House Beef & Horseradish Biggie Sandwich",
+                "330"
+            ],
+            [
+                "Homestyle Chicken and Rice Soup",
+                "100"
+            ],
+            [
+                "Roasted Tomato Tortilla Soup",
+                "60"
+            ],
+            [
+                "Broccoli Cheddar Quiche",
                 "250"
             ],
             [
-                "Tomato and White Bean Salad 3 oz",
-                "90"
+                "Shiitake Mushrooms with Ginger & Garlic",
+                "270"
             ]
         ]
     },
     "Monday": {
         "Breakfast": [
             [
-                "Oatmeal with Toppings",
-                "160"
+                "Blueberries & Cream Oatmeal",
+                "130"
             ],
             [
-                "Cream of Wheat",
-                "80"
-            ],
-            [
-                "Omelet Bar",
+                "Breakfast for Lunch Omelet Bar",
                 "240"
             ],
             [
                 "Scrambled Eggs",
-                "90"
+                "180"
             ],
             [
                 "Blueberry Pancakes",
                 "220"
             ],
             [
-                "Home Fried  Potato",
-                "140"
-            ],
-            [
-                "Sausage Links",
-                "100"
-            ]
-        ],
-        "Dinner": [
-            [
-                "Made to Order Deli Bar",
-                "280"
-            ],
-            [
-                "Nacho Bar",
-                "520"
-            ],
-            [
-                "Mexican Fried Rice",
-                "170"
-            ],
-            [
-                "Refried Beans",
-                "100"
-            ],
-            [
-                "Herbed Baked Pollock",
-                "160"
-            ],
-            [
-                "Rice  Pilaf",
-                "130"
-            ],
-            [
-                "Steamed Broccoli",
-                "40"
-            ],
-            [
-                "Breakfast for Dinner Pancake Bar",
-                "530"
-            ],
-            [
-                "Scrambled Egg",
-                "100"
-            ],
-            [
-                "Sausage Links",
-                "100"
-            ],
-            [
                 "French Fried Tater Tots",
                 "250"
             ],
             [
-                "Corndogs",
+                "Corned Beef Hash",
+                "210"
+            ],
+            [
+                "Sausage Gravy & Biscuit",
                 "320"
-            ],
-            [
-                "Bacon Cheeseburger Pizza",
-                "660"
-            ],
-            [
-                "Pepperoni Pizza",
-                "310"
-            ],
-            [
-                "Garlic Parmesan Breadsticks",
-                "90"
-            ],
-            [
-                "Spaghetti Sauce with Tomato Bits",
-                "35"
-            ],
-            [
-                "Creamy Dilled Potato Salad",
-                "60"
-            ],
-            [
-                "Thai Chicken Biggie Sandwich",
-                "260"
-            ],
-            [
-                "Old-Fashioned Chicken Noodle Soup",
-                "150"
-            ],
-            [
-                "Gingered Carrot Soup",
-                "80"
-            ],
-            [
-                "Broccoli Cheddar Baked Stuffed Potato",
-                "240"
-            ],
-            [
-                "Ginger Tofu & Vegetable Stir Fry",
-                "240"
             ]
         ],
         "Lunch": [
+            [
+                "Deviled Egg Salad Sandwich",
+                "290"
+            ],
             [
                 "Made to Order Deli Bar",
                 "280"
             ],
             [
-                "BBQ Chicken",
-                "110"
+                "Kalua Pig & Cabbage",
+                "290"
             ],
             [
-                "Yellow Rice",
-                "160"
+                "Southern Style Fried Chicken",
+                "460"
             ],
             [
-                "Mixed Vegetables",
-                "60"
+                "Macaroni and  Cheese",
+                "140"
             ],
             [
-                "Local Special Loco Moco",
-                "440"
+                "Hot Italian Meatball Sandwiches",
+                "630"
             ],
             [
-                "French  Fries",
-                "260"
+                "Grilled Cheese with Tomatoes on Wheat",
+                "190"
             ],
             [
-                "Pepperoni Calzone",
-                "740"
+                "French Fries",
+                "270"
             ],
             [
-                "Taco Snowshoe Pizza",
-                "150"
+                "Margherita Pizza",
+                "200"
             ],
             [
-                "Macaroni and Cheese Casserette",
-                "640"
+                "Lasagna Flat Bread Pizza",
+                "170"
             ],
             [
                 "Herb Seasoned Breadsticks",
@@ -272,14 +178,6 @@
                 "35"
             ],
             [
-                "Creamy Dilled Potato Salad",
-                "60"
-            ],
-            [
-                "Thai Chicken Biggie Sandwich",
-                "260"
-            ],
-            [
                 "Old-Fashioned Chicken Noodle Soup",
                 "110"
             ],
@@ -288,12 +186,16 @@
                 "60"
             ],
             [
-                "Spicy Eggplant with Garbanzo Beans",
-                "200"
+                "Cucumber  Salad",
+                "70"
             ],
             [
-                "Cheese Ravioli Pasta Bowl",
-                "490"
+                "African Greens Mix",
+                "15"
+            ],
+            [
+                "Northern White Beans with Artichokes",
+                "70"
             ]
         ]
     },
@@ -308,7 +210,7 @@
                 "80"
             ],
             [
-                "Omelet Bar",
+                "Breakfast for Lunch Omelet Bar",
                 "240"
             ],
             [
@@ -316,30 +218,38 @@
                 "180"
             ],
             [
-                "French Waffles with Strawberries",
-                "370"
+                "Texas French Toast",
+                "130"
             ],
             [
-                "French Fried Tater Tots",
-                "250"
+                "Home Fried  Potatoes",
+                "160"
             ],
             [
                 "Crispy Bacon",
                 "60"
+            ],
+            [
+                "Home-Style Breakfast Bowl",
+                "540"
             ]
         ],
-        "Dinner": [
+        "Lunch": [
             [
-                "Homestyle Meatloaf",
-                "300"
+                "Made to Order Deli Bar",
+                "280"
             ],
             [
-                "Mashed Red Potatoes",
-                "120"
+                "Breakfast for Lunch Omelet Bar",
+                "240"
             ],
             [
-                "Chicken Nuggets",
-                "320"
+                "BBQ Korean Chicken",
+                "130"
+            ],
+            [
+                "Monte Cristo Sandwich",
+                "670"
             ],
             [
                 "Classic Cheeseburger on a Toasted Bun",
@@ -347,89 +257,19 @@
             ],
             [
                 "French  Fries",
-                "110"
+                "260"
             ],
             [
-                "Flatbread Pizza Bar",
-                "580"
+                "Sausage Mushroom Snowshoe Pizza",
+                "140"
+            ],
+            [
+                "Penne Bolognese Casserette",
+                "340"
             ],
             [
                 "Tossed Garden Salad",
                 "15"
-            ],
-            [
-                "Country-Style Potato Salad",
-                "120"
-            ],
-            [
-                "Corned Beef Banh Mi Biggie",
-                "280"
-            ],
-            [
-                "Made to Order Deli Bar",
-                "280"
-            ],
-            [
-                "Bacon Corn Chowder",
-                "230"
-            ],
-            [
-                "Miso Soup",
-                "50"
-            ],
-            [
-                "Tofu Fried Rice",
-                "310"
-            ],
-            [
-                "Greek Spinach Strudel",
-                "480"
-            ],
-            [
-                "Ancho Lime Marinated Chicken",
-                "110"
-            ],
-            [
-                "Oven Roasted Herb Potatoes",
-                "130"
-            ],
-            [
-                "Sliced Steamed Carrots",
-                "40"
-            ]
-        ],
-        "Lunch": [
-            [
-                "Made to Order Deli Bar",
-                "280"
-            ],
-            [
-                "Honey BBQ Chicken Nugget",
-                "550"
-            ],
-            [
-                "Pulled BBQ Chicken Sandwich",
-                "280"
-            ],
-            [
-                "Grilled Cheese Sandwiches",
-                "290"
-            ],
-            [
-                "Rosemary Parmesan French Fries",
-                "260"
-            ],
-            [
-                "Chicken Florentine Pizza",
-                "210"
-            ],
-            [
-                "Lasagna Bolognese Roll w/Ricotta",
-                "380"
-            ],
-            [
-                "Caesar Salad",
-                "60"
             ],
             [
                 "Herb Seasoned Breadsticks",
@@ -440,39 +280,39 @@
                 "35"
             ],
             [
-                "Country-Style Potato Salad",
-                "120"
+                "Pineapple Cole Slaw",
+                "70"
             ],
             [
-                "Corned Beef Banh Mi Biggie",
-                "280"
+                "Chimmichuri Chicken Biggie Sandwich",
+                "210"
             ],
             [
                 "Bacon Corn Chowder",
-                "230"
+                "170"
             ],
             [
-                "Miso Soup",
-                "50"
+                "Three Mushroom Barley",
+                "60"
             ],
             [
-                "Spicy Eggplant with Garbanzo Beans",
-                "200"
+                "Mexican Posole",
+                "70"
             ],
             [
-                "Vegan Macaroni Dinner",
-                "200"
+                "Pesto Pasta Salad",
+                "210"
             ],
             [
-                "Roasted Turkey",
-                "180"
+                "Simple Baked Chicken",
+                "390"
             ],
             [
-                "Simple Baked Sweet Potato",
-                "190"
+                "Rice  Pilaf",
+                "130"
             ],
             [
-                "Steamed Broccoli",
+                "California Mixed Vegetables",
                 "10"
             ]
         ]
@@ -480,15 +320,11 @@
     "Tuesday": {
         "Breakfast": [
             [
-                "Blueberries & Cream Oatmeal",
-                "180"
+                "Oatmeal with Toppings",
+                "160"
             ],
             [
-                "Cream of Wheat",
-                "80"
-            ],
-            [
-                "Omelet Bar",
+                "Breakfast for Lunch Omelet Bar",
                 "240"
             ],
             [
@@ -496,110 +332,20 @@
                 "180"
             ],
             [
+                "Cinnamon Toast Crunch Bagel French Toast",
+                "200"
+            ],
+            [
                 "Mexican Breakfast Potatoes",
                 "100"
             ],
             [
-                "Corned Beef Hash",
-                "210"
-            ],
-            [
-                "French Toast Sticks",
-                "400"
+                "Sausage Links",
+                "100"
             ],
             [
                 "Breakfast Fried Rice",
                 "270"
-            ]
-        ],
-        "Dinner": [
-            [
-                "Made to Order Deli Bar",
-                "280"
-            ],
-            [
-                "Chicken Alfredo Primavera Casserette",
-                "550"
-            ],
-            [
-                "Chicken Tenders",
-                "360"
-            ],
-            [
-                "Classic Cheeseburger on a Toasted Bun",
-                "340"
-            ],
-            [
-                "Curly Fries",
-                "330"
-            ],
-            [
-                "Meatlover's Pizza",
-                "680"
-            ],
-            [
-                "Garlic Rosemary Breadsticks",
-                "80"
-            ],
-            [
-                "Marinara Sauce",
-                "60"
-            ],
-            [
-                "Lo Mein Noodle Salad",
-                "110"
-            ],
-            [
-                "Cuban Style Turkey Biggie",
-                "290"
-            ],
-            [
-                "Beef, Barley & Mushroom Soup",
-                "80"
-            ],
-            [
-                "Split Pea Soup",
-                "150"
-            ],
-            [
-                "Mushroom Street Tacos w/ Cilantro Cream Sauce",
-                "320"
-            ],
-            [
-                "Kale & Potato Enchilada Bake",
-                "60"
-            ],
-            [
-                "Meatless Loaf",
-                "160"
-            ],
-            [
-                "Spicy Potato Curry",
-                "70"
-            ],
-            [
-                "Spinach w/ Black Dal",
-                "80"
-            ],
-            [
-                "Pesto Pasta",
-                "70"
-            ],
-            [
-                "Eggplant Parmesan",
-                "280"
-            ],
-            [
-                "BBQ Beef Brisket",
-                "280"
-            ],
-            [
-                "Oven Roasted Rosemary Potatoes",
-                "160"
-            ],
-            [
-                "Steamed  Corn",
-                "60"
             ]
         ],
         "Lunch": [
@@ -608,122 +354,16 @@
                 "280"
             ],
             [
-                "Cheese & Chicken Quesadilla",
-                "500"
+                "Buffalo Meltdown Sandwich",
+                "930"
             ],
             [
-                "Classic Cheeseburger on a Toasted Bun",
-                "340"
+                "Cheese Quesadilla",
+                "330"
             ],
             [
                 "French Fried Potatoes",
                 "240"
-            ],
-            [
-                "Turkey, Bacon, and Swiss Stromboli",
-                "570"
-            ],
-            [
-                "Pasta Primavera Casserette",
-                "460"
-            ],
-            [
-                "Herb Seasoned Breadsticks",
-                "80"
-            ],
-            [
-                "Spaghetti Sauce with Tomato Bits",
-                "35"
-            ],
-            [
-                "Lo Mein Noodle Salad",
-                "110"
-            ],
-            [
-                "Cuban Style Turkey Biggie",
-                "290"
-            ],
-            [
-                "Beef, Barley & Mushroom Soup",
-                "80"
-            ],
-            [
-                "Split Pea Soup",
-                "150"
-            ],
-            [
-                "Shakshouka",
-                "170"
-            ],
-            [
-                "Roasted Curry Tofu",
-                "35"
-            ],
-            [
-                "Thai Top Round Beef",
-                "140"
-            ],
-            [
-                "Jasmine Rice",
-                "130"
-            ],
-            [
-                "Stir Fried Cabbage w/ Red Peppers & Peas",
-                "60"
-            ]
-        ]
-    },
-    "Wednesday": {
-        "Breakfast": [
-            [
-                "Peaches & Cream Oatmeal",
-                "140"
-            ],
-            [
-                "Omelet Bar",
-                "240"
-            ],
-            [
-                "Scrambled Eggs",
-                "180"
-            ],
-            [
-                "Pomegranate Berry French Toast",
-                "180"
-            ],
-            [
-                "Shredded Hash Brown Potatoes",
-                "25"
-            ],
-            [
-                "Grilled Spam",
-                "90"
-            ],
-            [
-                "Farmers Egg Breakfast Bowl",
-                "290"
-            ]
-        ],
-        "Dinner": [
-            [
-                "Made to Order Deli Bar",
-                "280"
-            ],
-            [
-                "Chicken Breast Florentine",
-                "200"
-            ],
-            [
-                "Tomato & Olive Spaghetti",
-                "480"
-            ],
-            [
-                "Local Special Loco Moco",
-                "440"
-            ],
-            [
-                "French Fries",
-                "170"
             ],
             [
                 "Create Your Own Pasta Ravioli Bar",
@@ -734,36 +374,68 @@
                 "140"
             ],
             [
-                "Bow Tie Spinach Carbonara Salad",
+                "Corned Beef Biggie Sandwich",
+                "300"
+            ],
+            [
+                "Hearty Beef Vegetable Soup",
+                "70"
+            ],
+            [
+                "Curry Lentil Soup",
+                "120"
+            ],
+            [
+                "Roasted Eggplant",
                 "160"
             ],
             [
-                "Curried Chicken on Flatbread",
-                "270"
+                "Balsamic Broccoli Pasta Salad",
+                "90"
             ],
             [
-                "Hearty Chicken & Rice Soup",
-                "110"
+                "BBQ Beef Brisket",
+                "280"
             ],
             [
-                "American Bounty Vegetable Soup",
-                "45"
+                "Rice  Pilaf",
+                "130"
             ],
             [
-                "Hush Puppies",
+                "Steamed Fresh Broccoli",
+                "40"
+            ]
+        ]
+    },
+    "Wednesday": {
+        "Breakfast": [
+            [
+                "Peaches & Cream Oatmeal",
                 "140"
             ],
             [
-                "Roasted Butternut Squash with Thyme",
-                "110"
+                "Breakfast for Lunch Omelet Bar",
+                "240"
             ],
             [
-                "Kalua Pig & Cabbage with Rice",
-                "640"
+                "Scrambled Eggs",
+                "180"
             ],
             [
-                "Steamed  Corn",
-                "60"
+                "Buttermilk  Pancakes",
+                "340"
+            ],
+            [
+                "French Fried Tater Tot",
+                "340"
+            ],
+            [
+                "Portuguese Sausage",
+                "260"
+            ],
+            [
+                "Banana Strawberry Yogurt Smoothie",
+                "230"
             ]
         ],
         "Lunch": [
@@ -772,28 +444,36 @@
                 "280"
             ],
             [
-                "Ham & Cheese Melt",
-                "350"
+                "Coconut Fish with Red Pepper Sauce",
+                "290"
+            ],
+            [
+                "Chow Mein Noodles",
+                "130"
+            ],
+            [
+                "Kalua Pig & Cabbage",
+                "290"
+            ],
+            [
+                "Corndogs",
+                "320"
             ],
             [
                 "Classic Cheeseburger on a Toasted Bun",
                 "340"
             ],
             [
-                "French Fried Tater Tots",
-                "340"
+                "Curly Fries",
+                "330"
             ],
             [
-                "Pesto Spinach Tomato Penne Casserette",
-                "360"
+                "Pepperoni Pizza",
+                "300"
             ],
             [
-                "Meatlover's Pizza",
-                "680"
-            ],
-            [
-                "Cheese Pizza",
-                "290"
+                "Supreme Pizza",
+                "480"
             ],
             [
                 "Herb Seasoned Breadsticks",
@@ -804,40 +484,28 @@
                 "35"
             ],
             [
-                "Bow Tie Spinach Carbonara Salad",
-                "160"
-            ],
-            [
-                "Grilled Chicken Shawarma Pita",
-                "180"
-            ],
-            [
-                "Hearty Chicken & Rice Soup",
-                "110"
-            ],
-            [
-                "American Bounty Vegetable Soup",
-                "45"
-            ],
-            [
-                "Moroccan Couscous",
-                "290"
-            ],
-            [
-                "Ginger Tofu & Vegetable Stir Fry",
-                "240"
-            ],
-            [
-                "Grilled Salmon",
-                "250"
-            ],
-            [
-                "Rice  Pilaf",
+                "Toasted Lentil Salad",
                 "130"
             ],
             [
-                "Steamed Broccoli",
-                "40"
+                "Turkey Hummus Biggie Sandwich",
+                "200"
+            ],
+            [
+                "Roast Turkey & Rice Soup",
+                "110"
+            ],
+            [
+                "Tuscan Bean Soup",
+                "110"
+            ],
+            [
+                "Spaghetti Squash & Pintos with Sofrito",
+                "250"
+            ],
+            [
+                "Mandarin Orange Spinach Salad",
+                "80"
             ]
         ]
     }
