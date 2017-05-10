@@ -8,19 +8,6 @@ import { Profiles, ProfilesSchema } from '../../api/profiles/profiles.js';
 const displayErrorMessages = 'displayErrorMessages';
 const displaySuccessMessage = 'displaySuccessMessage';
 
-const dormsList = [
-  'Frear Hall',
-  'Gateway House',
-  'Hale Anuenue',
-  'Hale Laulima',
-  'Hale Kahawai',
-  'Johnson Hall',
-  'Hale Aloha Ilima',
-  'Hale Aloha Lehua',
-  'Hale Aloha Lokelani',
-  'Hale Aloha Mokihana',
-];
-
 Template.Profile_Page.onRendered(function onRendered() {
   this.$('.ui.checkbox').checkbox();
   this.$('.dropdown').dropdown();
@@ -47,12 +34,6 @@ Template.Profile_Page.helpers({
     const invalidKeys = Template.instance().context.invalidKeys();
     const errorObject = _.find(invalidKeys, (keyObj) => keyObj.name === fieldName);
     return errorObject && Template.instance().context.keyErrorMessage(errorObject.name);
-  },
-  /**
-   * Returns the list of dorms as an object. Used for displaying the list of dorms on the form page.
-   */
-  dorms() {
-    return _.map(dormsList, (dorm) => ({ label: dorm }));
   },
   profileField(fieldName) {
     const profileData = Profiles.findOne({ username: FlowRouter.getParam('username') });

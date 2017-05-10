@@ -10,7 +10,7 @@
         {{> Text_Form_Control name="last" placeholder="Doe" value=(profileField 'last') label="Last Name" errorMessage=(fieldError "last") }}
       </div>
       <div class="three fields">
-        {{> Select_Form_Control name="dorm" label="Dorm" options=dorms errorMessage=(fieldError "dorm") }}
+        {{> Text_Form_Control name="dorm" label="Dorm" value=(profileField 'dorm') errorMessage=(fieldError "dorm") required=true }}
         {{> Text_Form_Control name="room" placeholder="201B" value=(profileField 'room') label="Room Number" errorMessage=(fieldError "room") }}
         {{> Text_Form_Control name="phone" placeholder="808-956-8111" value=(profileField 'phone') label="Phone Number" errorMessage=(fieldError "phone") }}
       </div>
