@@ -10,19 +10,6 @@ import { $ } from 'meteor/jquery';
 
 const displayErrorMessages = 'displayErrorMessages';
 
-const dormsList = [
-  'Frear Hall',
-  'Gateway House',
-  'Hale Anuenue',
-  'Hale Laulima',
-  'Hale Kahawai',
-  'Johnson Hall',
-  'Hale Aloha Ilima',
-  'Hale Aloha Lehua',
-  'Hale Aloha Lokelani',
-  'Hale Aloha Mokihana',
-];
-
 const day = {
   0: 'Sunday',
   1: 'Monday',
@@ -75,9 +62,6 @@ Template.Add_Request_Page.helpers({
   },
   isValidUser() {
     return Meteor.user().profile.name === FlowRouter.getParam('username');
-  },
-  dorms() {
-    return _.map(dormsList, (dorm) => ({ label: dorm }));
   },
   /**
    * Returns the list of the current menu items based on the current day, time, and cafeteria selected.
