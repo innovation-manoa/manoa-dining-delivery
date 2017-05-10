@@ -46,4 +46,3 @@ Template.Browse_Menu_Aloha.events({
     instance.currentTab.set(currentTab.data('template'));
   },
 });
-
