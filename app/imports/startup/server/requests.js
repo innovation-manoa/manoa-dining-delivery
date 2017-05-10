@@ -13,6 +13,7 @@ const requestSeeds = [
     dorm: 'Frear Hall',
     room: '201A',
     phone: '808-956-8111',
+    cafeteria: 'Gateway Cafe',
     requestedFoods: ['Teri Burger'],
     fulfilled: false,
   },
