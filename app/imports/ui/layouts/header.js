@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating';
-
 import swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import './header.html';
@@ -19,24 +18,34 @@ Template.Header.onRendered(function enableDropDown() {
 Template.Header.events({
   'click #edit_profile'(event) {
     event.preventDefault();
-    const profileData = Profiles.findOne({ username: Meteor.user().profile.name });
+    const data = Profiles.findOne({ username: Meteor.user().profile.name });
     swal({
       title: 'Edit Your Profile ',
       html:
       `<label for="swal-input1"> First Name </label>
-        <input id="swal-input1" class="swal2-input" value="${profileData.first}" placeholder="First Name">
+        <input id="swal-input1" class="swal2-input" value="${(data && data.first) ? data.first : ''}"
+          placeholder="First Name">
       <label for="swal-input2"> Last Name </label>
-        <input id="swal-input2" class="swal2-input" value="${profileData.last}" placeholder="Last Name">
+        <input id="swal-input2" class="swal2-input" value="${(data && data.last) ? data.last : ''}"
+          placeholder="Last Name">
       <label for="swal-input3"> Dorm </label>
-        <input id="swal-input3" class="swal2-input" value="${profileData.dorm}" placeholder="Dorm">
+        <input id="swal-input3" class="swal2-input" value="${(data && data.dorm) ? data.dorm : ''}"
+          placeholder="Dorm">
       <label for="swal-input4"> Room Number </label>
-        <input id="swal-input4" class="swal2-input" value="${profileData.room}" placeholder="Room Number" required>
+        <input id="swal-input4" class="swal2-input" value="${(data && data.room) ? data.room : ''}"
+          placeholder="Room Number" required>
       <label for="swal-input5"> Phone Number </label>
-        <input id="swal-input5" class="swal2-input" value="${profileData.phone}" placeholder="Phone Number" required>`,
+        <input id="swal-input5" class="swal2-input" value="${(data && data.phone) ? data.phone : ''}"
+          placeholder="Phone Number" required>`,
       confirmButtonColor: '#329900',
       confirmButtonText: 'Update',
       preConfirm() {
-        return new Promise(function res(resolve) {
+        return new Promise(function res(resolve, reject) {
+          const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+          // Display an error message if the phone number does not match the regex
+          if ($('#swal-input5').val() && !phoneRegex.test($('#swal-input5').val())) {
+            reject('You must enter a valid phone number with its area code.');
+          }
           resolve([
             $('#swal-input1').val(),
             $('#swal-input2').val(),
@@ -67,7 +76,6 @@ Template.Header.events({
         const docId = Profiles.findOne({ username: Meteor.user().profile.name })._id;
         Profiles.update(docId, { $set: updatedProfileData });
       }
-
       swal(
       'Success!',
       '<p> Your profile was updated successfully </p>',
